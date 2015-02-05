@@ -7,14 +7,11 @@
 {% if fpm_top_cat != 'all' %}
 	<div class="top module single cat">
 		{% for post in term.get_posts('numberposts=1') %}
-			{% if count < 5 %}
-				{% set count = count + 1 %}
-				<div class="single"{% if post.thumbnail %} style="background-image:url('{{ post.get_thumbnail.get_src|resize(1440, 890) }}');"{% endif %}>
-					<div class="inside">
-						<div class="content"><h3 class="title"><a href="{{ post.link }}">{{ post.title }}</a></h3></div>
-					</div>
-				</div>
-				{% endif %}
+			<a class="featured-image" href="{{ post.link }}"><img src="{{ post.get_thumbnail.get_src|resize(1440, 890) }}"></a>
+			<div class="content">
+				<h2 class="title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+				{{ post.get_preview(90, false, '', true) }}
+			</div>
 		{% endfor %}
 	</div>
 {% else %}

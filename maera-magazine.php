@@ -33,11 +33,12 @@ add_filter( 'maera/shells/available', 'maera_shell_magazine_include' );
 if ( ! class_exists( 'Maera_Magazine' ) ) {
 
     /**
-    * The Material Design Shell module
-    */
+     * The Magazine Shell module
+     */
     class Maera_Magazine {
 
         private static $instance;
+        public $customizer;
 
         /**
         * Class constructor
@@ -47,6 +48,11 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
             if ( ! defined( 'MAERA_SHELL_PATH' ) ) {
                 define( 'MAERA_SHELL_PATH', dirname( __FILE__ ) );
             }
+
+            // Require any additional files
+            require_once( __DIR__ . '/includes/class-Maera_MG_Customizer.php');
+
+            $this->customizer = new Maera_MG_Customizer();
 
         }
 

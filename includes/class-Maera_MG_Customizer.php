@@ -18,8 +18,9 @@ class Maera_MG_Customizer {
             'frontpage'   => array( 'title' => __( 'Frontpage', 'maera_mg' ), 'priority' => 20, ),
             'archives'    => array( 'title' => __( 'Archives', 'maera_mg' ), 'priority' => 30, ),
             'single_post' => array( 'title' => __( 'Single Posts', 'maera_mg' ), 'priority' => 40, ),
-            'typography'  => array( 'title' => __( 'Typography', 'maera_mg' ), 'priority' => 50, ),
-            'colors'      => array( 'title' => __( 'Colors', 'maera_mg' ), 'priority' => 10 ),
+            'layout'      => array( 'title' => __( 'Layout', 'maera_mg' ), 'priority' => 50 ),
+            'typography'  => array( 'title' => __( 'Typography', 'maera_mg' ), 'priority' => 60, ),
+            'colors'      => array( 'title' => __( 'Colors', 'maera_mg' ), 'priority' => 70 ),
         );
 
         foreach ( $sections as $section => $args ) {
@@ -35,6 +36,20 @@ class Maera_MG_Customizer {
     }
 
     function settings( $controls ) {
+
+        $controls[] = array(
+            'type'     => 'radio',
+            'setting'  => 'sidebar_width',
+            'label'    => __( 'Sidebar Width', 'maera_mg' ),
+            'section'  => 'layout',
+            'default'  => '336',
+            'priority' => 1,
+            'choices'  => array(
+                '300' => __( '300px', 'maera_mg' ),
+                '320' => __( '320px', 'maera_mg' ),
+                '336' => __( '336px', 'maera_mg' ),
+            ),
+        );
 
         return $controls;
 

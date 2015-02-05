@@ -39,10 +39,13 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
 
         private static $instance;
         public $customizer;
+        public $enqueue;
+        public $settings;
+        public $style;
 
         /**
-        * Class constructor
-        */
+         * Class constructor
+         */
         public function __construct() {
 
             if ( ! defined( 'MAERA_SHELL_PATH' ) ) {
@@ -52,9 +55,11 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
             // Require any additional files
             require_once( __DIR__ . '/includes/class-Maera_MG_Customizer.php');
             require_once( __DIR__ . '/includes/class-Maera_MG_Enqueue.php');
+            require_once( __DIR__ . '/includes/class-Maera_MG_Style.php');
 
             $this->customizer = new Maera_MG_Customizer();
             $this->enqueue    = new Maera_MG_Enqueue();
+            $this->style      = new Maera_MG_Style();
 
         }
 

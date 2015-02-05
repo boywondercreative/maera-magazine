@@ -32,3 +32,76 @@ body.sidebar-336 #sidebar-primary {
   display: -moz-flex;
   display: flex;
 }
+.top.module {
+  clear: both;
+}
+.top.module.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.top.module.grid .single {
+  min-width: 320px;
+  height: 35vh;
+  background-size: cover;
+  width: 29.75%;
+  margin-left: .5%;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  overflow: hidden;
+}
+.top.module.grid .single .inside {
+  padding: 1%;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  max-width: 450px;
+}
+.top.module.grid .single .inside h3.title a {
+  font-size: 1.6em;
+  width: 60%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+}
+.top.module.grid .single:first-child {
+  height: 45vh;
+  width: 60%;
+  margin-left: 0;
+}
+.top.module.grid .single:nth-child(2),
+.top.module.grid .single:nth-child(3) {
+  height: 45vh;
+  width: 39.5%;
+}
+.top.module.grid .single:nth-child(3) {
+  margin-left: 0;
+  height: 35vh;
+}
+.top.module.single a.featured-image {
+  width: 60%;
+  margin-right: 2%;
+  display: inline-block;
+  float: left;
+}
+.top.module.single .content {
+  width: 38%;
+  font-size: 1.2em;
+  display: inline-block;
+}
+.top.module.single .title {
+  padding-bottom: 1em;
+  border-bottom: 1px dashed #dedede;
+}
+.top.module.single .title a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+body {
+  min-width: 1120px;
+  margin: auto;
+}

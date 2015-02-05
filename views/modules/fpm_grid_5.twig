@@ -1,0 +1,34 @@
+{% set fpm_top_cat = theme.theme_mod('fpm_top_cat', 'all') %}
+{% if fpm_top_cat != 'all' %}
+	{% set term = TimberTerm((fpm_top_cat)) %}
+{% endif %}
+
+{% set count = 0 %}
+{% if fpm_top_cat != 'all' %}
+	<div class="top module grid cat">
+		{% for post in term.get_posts('numberposts=5') %}
+			{% if count < 5 %}
+				{% set count = count + 1 %}
+				<div class="single"{% if post.thumbnail %} style="background-image:url('{{ post.get_thumbnail.get_src|resize(1440, 890) }}');"{% endif %}>
+					<div class="inside">
+						<div class="content"><h3 class="title"><a href="{{ post.link }}">{{ post.title }}</a></h3></div>
+					</div>
+				</div>
+				{% endif %}
+		{% endfor %}
+	</div>
+{% else %}
+	<div class="top module grid">
+		{% for post in posts %}
+			{% if count < 5 %}
+				{% set count = count + 1 %}
+				<div class="single"{% if post.thumbnail %} style="background-image:url('{{ post.get_thumbnail.get_src|resize(1440, 890) }}');"{% endif %}>
+					<div class="inside">
+						<div class="content"><h3 class="title"><a href="{{ post.link }}">{{ post.title }}</a></h3></div>
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+{% endif %}
+<div class="clearfix"></div>

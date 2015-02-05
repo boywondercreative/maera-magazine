@@ -4,6 +4,7 @@
 <div class="container wrap main-section" id="wrap-main-section">
 	{% do action( 'maera/content/before', post.ID ) %}
 	<div class="content" id="content" itemprop="mainContentOfPage">
+		{% include 'modules/fpm_'~theme.theme_mod('fpm_top', 'grid_5')~'.twig' %}
 		<div class="content-primary-wrapper {{ 'main'|apply_filters( 'maera/section_class/wrapper' ) }}">
 			<main class="{{ 'main'|apply_filters( 'maera/section_class/content' ) }}" role="main">
 				{% for post in posts %}

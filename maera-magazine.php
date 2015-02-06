@@ -56,10 +56,15 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
             require_once( __DIR__ . '/includes/class-Maera_MG_Customizer.php');
             require_once( __DIR__ . '/includes/class-Maera_MG_Enqueue.php');
             require_once( __DIR__ . '/includes/class-Maera_MG_Style.php');
+            require_once( __DIR__ . '/includes/class-Maera_MG_Widget_Areas.php');
+            require_once( __DIR__ . '/includes/class-Maera_MG_Featured_Widget.php');
+            require_once( __DIR__ . '/includes/class-Maera_MG_Timber.php');
 
             $this->customizer = new Maera_MG_Customizer();
             $this->enqueue    = new Maera_MG_Enqueue();
             $this->style      = new Maera_MG_Style();
+            $this->sidebars   = new Maera_MG_Widget_Areas();
+            $this->timber     = new Maera_MG_Timber();
 
         }
 

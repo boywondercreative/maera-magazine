@@ -12,9 +12,11 @@ class Maera_MG_Enqueue {
     function scripts() {
 
         // Add our custom styles
-        wp_register_style( 'maera-mg', trailingslashit( MAERA_MAGAZINE_SHELL_URL ) . 'assets/css/app.css' );
-        wp_enqueue_style( 'maera-mg' );
+		wp_register_style( 'maera-mg', trailingslashit( MAERA_MAGAZINE_SHELL_URL ) . 'assets/css/app.css' );
+		wp_register_style( 'normalize', trailingslashit( MAERA_MAGAZINE_SHELL_URL ) . 'assets/css/normalize.css' );
 
+        wp_enqueue_style( 'normalize' );
+		wp_enqueue_style( 'maera-mg' );
     }
 
 }

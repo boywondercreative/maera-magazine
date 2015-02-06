@@ -51,30 +51,6 @@ class Maera_MG_Customizer {
 			),
 		);
 
-		$controls[] = array(
-			'type'     => 'radio',
-			'setting'  => 'fpm_top',
-			'label'    => __( 'Frontpage Module - Top', 'maera_mg' ),
-			'section'  => 'frontpage',
-			'default'  => 'grid',
-			'priority' => 1,
-			'choices'  => array(
-				'none'   => __( 'None', 'maera_mg' ),
-				'grid_5' => __( '5-post grid', 'maera_mg' ),
-				'single_big' => __( 'Single Post, BIG', 'maera_mg' ),
-			),
-		);
-
-		$controls[] = array(
-			'type'     => 'select',
-			'setting'  => 'fpm_top_cat',
-			'label'    => __( 'Frontpage Module - Top - Category', 'maera_mg' ),
-			'section'  => 'frontpage',
-			'default'  => 'all',
-			'priority' => 2,
-			'choices'  => $this->get_categories(),
-		);
-
         return $controls;
 
     }

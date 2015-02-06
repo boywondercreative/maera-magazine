@@ -1,10 +1,9 @@
-{% set fpm_top_cat = theme.theme_mod('fpm_top_cat', 'all') %}
-{% if fpm_top_cat != 'all' %}
-	{% set term = TimberTerm((fpm_top_cat)) %}
+{% if widget.category != 'any' %}
+	{% set term = TimberTerm((widget.category)) %}
 {% endif %}
 
 {% set count = 0 %}
-{% if fpm_top_cat != 'all' %}
+{% if widget.category != 'any' %}
 	<div class="top module grid cat">
 		{% for post in term.get_posts('numberposts=5') %}
 			{% if count < 5 %}

@@ -7,11 +7,7 @@
 		{{ sidebar.front_top }}
 		<div class="content-primary-wrapper {{ 'main'|apply_filters( 'maera/section_class/wrapper' ) }}">
 			<main class="{{ 'main'|apply_filters( 'maera/section_class/content' ) }}" role="main">
-				{% for post in posts %}
-					{% do action( 'maera/in_loop/begin' ) %}
-					{% include ['content-'~post.ID~'.twig', 'content-'~post.post_type~'.twig', 'content.twig'] %}
-					{% do action( 'maera/in_loop/end' ) %}
-				{% endfor %}
+				{{ sidebar.front_main }}
 			</main><!-- /.main -->
 			{% include 'sidebar.twig'|apply_filters('maera/sidebar_template') %}
 		</div>

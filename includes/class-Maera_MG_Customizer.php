@@ -15,13 +15,13 @@ class Maera_MG_Customizer {
     function customizer_sections( $wp_customize ) {
 
         $sections = array(
-            'frontpage'   => array( 'title' => __( 'Frontpage', 'maera_mg' ), 'priority' => 20, ),
-            'archives'    => array( 'title' => __( 'Archives', 'maera_mg' ), 'priority' => 30, ),
-            'single_post' => array( 'title' => __( 'Single Posts', 'maera_mg' ), 'priority' => 40, ),
-            'layout'      => array( 'title' => __( 'Layout', 'maera_mg' ), 'priority' => 50 ),
-            'typography'  => array( 'title' => __( 'Typography', 'maera_mg' ), 'priority' => 60, ),
-            'colors'      => array( 'title' => __( 'Colors', 'maera_mg' ), 'priority' => 70 ),
-			'background'  => array( 'title' => __( 'Background', 'maera_mg' ), 'priority' => 10 ),
+            'front_top_style' => array( 'title' => __( 'Frontpage-Top styles', 'maera_mg' ), 'priority' => 20, ),
+            'archives'        => array( 'title' => __( 'Archives', 'maera_mg' ), 'priority' => 30, ),
+            'single_post'     => array( 'title' => __( 'Single Posts', 'maera_mg' ), 'priority' => 40, ),
+            'layout'          => array( 'title' => __( 'Layout', 'maera_mg' ), 'priority' => 50 ),
+            'typography'      => array( 'title' => __( 'Typography', 'maera_mg' ), 'priority' => 60, ),
+            'colors'          => array( 'title' => __( 'Colors', 'maera_mg' ), 'priority' => 70 ),
+			'background'      => array( 'title' => __( 'Background', 'maera_mg' ), 'priority' => 10 ),
         );
 
         foreach ( $sections as $section => $args ) {
@@ -67,24 +67,34 @@ class Maera_MG_Customizer {
 			),
 		);
 
-		$controls[] = array(
-			'type'         => 'background',
-			'setting'      => 'background',
-			'label'        => __( 'Background', 'textdomain' ),
-			'description'  =>   __( 'Add a generic background for your site.', 'textdomain' ),
-			'section'      => 'background',
-			'default'      => array(
-				'color'    => '#f7f7f7',
-				'image'    => null,
-				'repeat'   => 'repeat',
-				'size'     => 'inherit',
-				'attach'   => 'inherit',
-				'position' => 'left-top',
-				'opacity'  => 100,
-			),
-			'priority' => 3,
-			'output' => 'html',
-		);
+        $controls[] = array(
+            'type'     => 'checkbox',
+            'setting'  => 'front_top_container',
+            'label'    => __( 'Front-Top widget area container', 'maera_mg' ),
+            'section'  => 'front_top_style',
+            'default'  => 1,
+            'priority' => 3,
+        );
+
+        $controls[] = array(
+            'type'         => 'background',
+            'setting'      => 'front_top_bg',
+            'label'        => __( 'Background', 'textdomain' ),
+            'description'  =>   __( 'Add a generic background for your site.', 'textdomain' ),
+            'section'      => 'front_top_style',
+            'default'      => array(
+                'color'    => '#f7f7f7',
+                'image'    => null,
+                'repeat'   => 'repeat',
+                'size'     => 'inherit',
+                'attach'   => 'inherit',
+                'position' => 'left-top',
+                'opacity'  => 100,
+            ),
+            'priority' => 3,
+            'output' => '.front-top-wrapper',
+        );
+
         return $controls;
 
     }

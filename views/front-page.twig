@@ -1,10 +1,14 @@
 {#<?php#}
 {% do action( 'maera/wrap/before', post.ID ) %}
 
-<div class="container wrap main-section" id="wrap-main-section">
+<div class="wrap main-section" id="wrap-main-section">
 	{% do action( 'maera/content/before', post.ID ) %}
 	<div class="content" id="content" itemprop="mainContentOfPage">
-		{{ sidebar.front_top }}
+		<div class="front-top-wrapper">
+			<div class="inside{% if theme.theme_mod('front_top_container', 1) == 1 %} container{% endif %}">
+				{{ sidebar.front_top }}
+			</div>
+		</div>
 		<div class="content-primary-wrapper {{ 'main'|apply_filters( 'maera/section_class/wrapper' ) }}">
 			<main class="row {{ 'main'|apply_filters( 'maera/section_class/content' ) }}" role="main">
 				{{ sidebar.front_main }}

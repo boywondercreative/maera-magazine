@@ -22,6 +22,7 @@ class Maera_MG_Widget_Classes {
 					'60' => array( 'label' => '60%', 'classes' => 'column percent-60' ),
 					'70' => array( 'label' => '70%', 'classes' => 'column percent-70' ),
 					'80' => array( 'label' => '80%', 'classes' => 'column percent-80' ),
+					'100' => array( 'label' => '100%', 'classes' => 'column percent-100' ),
 				),
 				'default' => '100',
 			)

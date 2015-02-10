@@ -129,6 +129,9 @@ body.site-mode-boxed {
 .column.percent-80 {
   width: 80%;
 }
+.column.percent-100 {
+  width: 100%;
+}
 .flex {
   display: flex;
   align-content: flex-start;

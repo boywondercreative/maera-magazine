@@ -61,6 +61,11 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 			'more_text'       => __( 'Read More', 'maera_mg' ),
 		);
 
+		$modes = array(
+			'fpm_grid_5'     => __( '5-post grid', 'maera_mg' ),
+			'fpm_single_big' => __( 'Single Post - BIG', 'maera_mg' ),
+		);
+
 		$instance = wp_parse_args( ( array ) $instance, $defaults );
 
 		$title = strip_tags( $instance['title'] ); ?>
@@ -69,12 +74,11 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 			<tr style="margin: 10px 0;">
 				<td><?php _e( 'Mode:','maera_mg' ); ?></td>
 				<td>
-					<input class="radio" type="radio" <?php if ( $instance['mode'] == 'fpm_grid_5' ) { ?>checked <?php } ?>name="<?php echo $this->get_field_name( 'mode' ); ?>" value="fpm_grid_5" id="<?php echo $this->get_field_id( 'mode' ); ?>_fpm_grid_5" />
-					<?php _e( '5-post grid', 'maera_mg' ); ?>
-					<br />
-					<input class="radio" type="radio" <?php if ( $instance['mode'] == 'single_big' ) { ?>checked <?php } ?>name="<?php echo $this->get_field_name( 'mode' ); ?>" value="fpm_single_big" id="<?php echo $this->get_field_id( 'mode' ); ?>_fpm_single_big" />
-					<?php _e( 'Single Post - BIG', 'maera_mg' ); ?>
-					<br />
+					<?php foreach ( $modes as $mode => $label ) : ?>
+						<input class="radio" type="radio" <?php if ( $instance['mode'] == $mode ) { ?>checked <?php } ?>name="<?php echo $this->get_field_name( 'mode' ); ?>" value="<?php echo $mode; ?>" id="<?php echo $this->get_field_id( 'mode' ); ?>_<?php echo $mode; ?>" />
+						<?php echo $label; ?>
+						<br />
+					<?php endforeach; ?>
 				</td>
 			</tr>
 			<tr>

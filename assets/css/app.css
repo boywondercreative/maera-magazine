@@ -105,3 +105,6 @@ body {
   min-width: 1120px;
   margin: auto;
 }
+body.site-mode-boxed {
+  max-width: 1120px;
+}

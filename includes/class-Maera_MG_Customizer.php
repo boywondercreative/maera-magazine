@@ -51,6 +51,21 @@ class Maera_MG_Customizer {
 			),
 		);
 
+		$controls[] = array(
+			'type'     => 'radio',
+			'mode'     => 'buttonset',
+			'setting'  => 'site_mode',
+			'label'    => __( 'My Setting', 'textdomain' ),
+			'section'  => 'layout',
+			'default'  => 'default',
+			'priority' => 2,
+			'choices'  => array(
+				'default' => __( 'Default', 'maera_mg' ),
+				'boxed'   => __( 'Boxed', 'maera_mg' ),
+				'full'    => __( 'Full-width', 'maera_mg' ),
+			),
+		);
+
         return $controls;
 
     }

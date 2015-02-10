@@ -6,7 +6,7 @@
 	<div class="content" id="content" itemprop="mainContentOfPage">
 		{{ sidebar.front_top }}
 		<div class="content-primary-wrapper {{ 'main'|apply_filters( 'maera/section_class/wrapper' ) }}">
-			<main class="flex {{ 'main'|apply_filters( 'maera/section_class/content' ) }}" role="main">
+			<main class="row {{ 'main'|apply_filters( 'maera/section_class/content' ) }}" role="main">
 				{{ sidebar.front_main }}
 			</main><!-- /.main -->
 			{% include 'sidebar.twig'|apply_filters('maera/sidebar_template') %}

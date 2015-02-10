@@ -21,6 +21,7 @@ class Maera_MG_Customizer {
             'layout'      => array( 'title' => __( 'Layout', 'maera_mg' ), 'priority' => 50 ),
             'typography'  => array( 'title' => __( 'Typography', 'maera_mg' ), 'priority' => 60, ),
             'colors'      => array( 'title' => __( 'Colors', 'maera_mg' ), 'priority' => 70 ),
+			'background'  => array( 'title' => __( 'Background', 'maera_mg' ), 'priority' => 10 ),
         );
 
         foreach ( $sections as $section => $args ) {
@@ -66,6 +67,24 @@ class Maera_MG_Customizer {
 			),
 		);
 
+		$controls[] = array(
+			'type'         => 'background',
+			'setting'      => 'background',
+			'label'        => __( 'Background', 'textdomain' ),
+			'description'  =>   __( 'Add a generic background for your site.', 'textdomain' ),
+			'section'      => 'background',
+			'default'      => array(
+				'color'    => '#f7f7f7',
+				'image'    => null,
+				'repeat'   => 'repeat',
+				'size'     => 'inherit',
+				'attach'   => 'inherit',
+				'position' => 'left-top',
+				'opacity'  => 100,
+			),
+			'priority' => 3,
+			'output' => 'html',
+		);
         return $controls;
 
     }

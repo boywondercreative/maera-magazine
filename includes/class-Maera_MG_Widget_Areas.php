@@ -8,21 +8,25 @@ class Maera_MG_Widget_Areas {
 
 	function widgets_init() {
 
+		$class        = apply_filters( 'maera/widgets/class', '' );
+		$before_title = apply_filters( 'maera/widgets/title/before', '<h3 class="widget-title">' );
+		$after_title  = apply_filters( 'maera/widgets/title/after', '</h3>' );
+
 		register_sidebar( array(
 			'name'          => 'Frontpage Top',
 			'id'            => 'front_top',
-			'before_widget' => '', // No need for these here, we'll add them in the twig template file.
-			'after_widget'  => '', // No need for these here, we'll add them in the twig template file.
-			'before_title'  => '', // No need for these here, we'll add them in the twig template file.
-			'after_title'   => '', // No need for these here, we'll add them in the twig template file.
+			'before_widget' => apply_filters( 'maera/widgets/before', '<section id="%1$s" class="' . $class . ' widget %2$s">' ),
+			'after_widget'  => apply_filters( 'maera/widgets/after', '</section>' ),
+			'before_title'  => $before_title,
+			'after_title'   => $after_title,
 		) );
 		register_sidebar( array(
 			'name'          => 'Frontpage Main',
 			'id'            => 'front_main',
-			'before_widget' => '', // No need for these here, we'll add them in the twig template file.
-			'after_widget'  => '', // No need for these here, we'll add them in the twig template file.
-			'before_title'  => '', // No need for these here, we'll add them in the twig template file.
-			'after_title'   => '', // No need for these here, we'll add them in the twig template file.
+			'before_widget' => apply_filters( 'maera/widgets/before', '<section id="%1$s" class="' . $class . ' widget %2$s">' ),
+			'after_widget'  => apply_filters( 'maera/widgets/after', '</section>' ),
+			'before_title'  => $before_title,
+			'after_title'   => $after_title,
 		) );
 
 	}

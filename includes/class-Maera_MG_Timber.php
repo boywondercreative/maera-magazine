@@ -12,6 +12,7 @@ class Maera_MG_Timber {
 	function timber_global_context( $data ) {
 
 		$data['sidebar']['front_top'] = Timber::get_widgets( 'front_top' );
+		$data['sidebar']['front_main'] = Timber::get_widgets( 'front_main' );
 
 		return $data;
 

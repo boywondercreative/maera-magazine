@@ -108,6 +108,32 @@ body {
 body.site-mode-boxed {
   max-width: 1120px;
 }
-.wrap.main-section {
-  background: #fff;
+.column.percent-20 {
+  width: 20%;
+}
+.column.percent-30 {
+  width: 30%;
+}
+.column.percent-40 {
+  width: 40%;
+}
+.column.percent-50 {
+  width: 50%;
+}
+.column.percent-60 {
+  width: 60%;
+}
+.column.percent-70 {
+  width: 70%;
+}
+.column.percent-80 {
+  width: 80%;
+}
+.flex {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+div.post-list {
+  padding-right: 20px;
 }

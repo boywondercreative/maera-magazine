@@ -6,7 +6,7 @@
 	{{ widget.after_title }}
 {% endif %}
 
-<div class="featured-posts-1-4 horizontal row">
+<div class="featured-posts-1-4 horizontal row inside">
 	{% for post in posts %}
 		{% if count == 0 %}
 			<div class="col-md-6 left">
@@ -17,7 +17,9 @@
 					<span class="comments"><span class="dashicons dashicons-admin-comments"></span>{{ post.comment_count }}</span>
 				</div>
 				<div class="preview">{{ post.get_preview(20, true, '', true) }}</div>
-				<a class="button read-more" href="{{ post.link }}">{{ __( 'Read More', 'maera_mg' ) }}</a>
+				<span class="readmore">
+					<a class="button read-more" href="{{ post.link }}">{{ __( 'Read More', 'maera_mg' ) }}</a>
+				</span>
 			</div>
 			<ul class="col-md-6 right">
 		{% else %}

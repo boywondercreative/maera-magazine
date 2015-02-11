@@ -1082,10 +1082,9 @@
   border-right: none;
   padding: 1rem;
 }
-.featured-posts-1-4.horizontal.row .left .button {
+.featured-posts-1-4.horizontal.row .left .readmore {
   position: absolute;
-  bottom: -6px;
-  right: -1px;
+  margin-top: 1rem;
 }
 .featured-posts-1-4.horizontal.row .left .post-title {
   font-weight: 400;

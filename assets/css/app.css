@@ -1057,6 +1057,66 @@
 .featured-posts .featured-post:hover .featured-title {
   bottom: 0;
 }
+.widget {
+  border-bottom: 5px solid transparent;
+}
+.widget.red {
+  border-color: #f44336;
+}
+.widget.pink {
+  border-color: #e91e63;
+}
+.widget.purple {
+  border-color: #9c27b0;
+}
+.widget.deep-purple {
+  border-color: #673ab7;
+}
+.widget.indigo {
+  border-color: #3f51b5;
+}
+.widget.blue {
+  border-color: #2196f3;
+}
+.widget.light-blue {
+  border-color: #03a9f4;
+}
+.widget.cyan {
+  border-color: #00bcd4;
+}
+.widget.teal {
+  border-color: #009688;
+}
+.widget.green {
+  border-color: #4caf50;
+}
+.widget.light-green {
+  border-color: #8bc34a;
+}
+.widget.lime {
+  border-color: #cddc39;
+}
+.widget.yellow {
+  border-color: #ffeb3b;
+}
+.widget.amber {
+  border-color: #ffc107;
+}
+.widget.orange {
+  border-color: #ff9800;
+}
+.widget.deep-orange {
+  border-color: #ff5722;
+}
+.widget.brown {
+  border-color: #795548;
+}
+.widget.grey {
+  border-color: #9e9e9e;
+}
+.widget.blue-grey {
+  border-color: #607d8b;
+}
 body {
   margin: 0;
 }

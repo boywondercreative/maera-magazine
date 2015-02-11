@@ -10,8 +10,8 @@
 			</div>
 		</div>
 		<div class="content-primary-wrapper {{ 'main'|apply_filters( 'maera/section_class/wrapper' ) }}">
-			<main class="row {{ 'main'|apply_filters( 'maera/section_class/content' ) }}" role="main">
-				{{ sidebar.front_main }}
+			<main class="{{ 'main'|apply_filters( 'maera/section_class/content' ) }}inside{% if theme.theme_mod('front_main_container', 1) == 1 %} container{% endif %}" role="main">
+				<div class="row">{{ sidebar.front_main }}</div>
 			</main><!-- /.main -->
 			{% include 'sidebar.twig'|apply_filters('maera/sidebar_template') %}
 		</div>

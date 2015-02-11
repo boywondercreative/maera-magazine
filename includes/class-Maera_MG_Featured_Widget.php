@@ -15,9 +15,8 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 
 	public function widget( $args, $instance ) {
 
-		/** This filter is documented in wp-includes/default-widgets.php */
-
 		$context = Maera()->views->context();
+
 		$context['widget'] = array(
 			'title'          => apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base ),
 			'category'       => $instance['term'],
@@ -26,6 +25,16 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 			'excerpt_length' => $instance['excerpt_length'],
 			'more_text'      => $instance['more_text'],
 		);
+
+		$context['post']   = Timber::query_post();
+		$context['posts']  = Timber::get_posts( array(
+			'post_type'        => $instance['post_type'],
+			'tax_query'        => ( 'any' != $instance['term'] ) ? array( array( 'taxonomy' => 'category', 'terms' => $instance['term'] ) ) : '',
+			'posts_per_page'   => $instance['per_page'],
+			'offset'           => $instance['offset'],
+		));
+
+		$context['widget'] = $widget;
 
 		Maera()->views->render( 'modules/' . $instance['mode'] . '.twig', $context );
 

@@ -1,5 +1,5 @@
 @import 'parts/grid.less';
-
+@import 'parts/featured-posts.less';
 body {
 
 	margin: 0;
@@ -43,60 +43,6 @@ body {
 
 .top.module {
 	clear: both;
-
-	&.grid {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
-
-		.single {
-			min-width: 320px;
-			height: 35vh;
-			background-size: cover;
-			width: 29.75%;
-			margin-left: .5%;
-			margin-bottom: 3px;
-			display: flex;
-			align-items: flex-end;
-			justify-content: left;
-			overflow: hidden;
-
-			.inside {
-				padding: 1%;
-				background: rgba(0,0,0,.65);
-				width: 100%;
-				max-width: 450px;
-
-				h3.title a {
-					font-size: 1.6em;
-					width: 60%;
-					text-decoration: none;
-					color: #fff;
-					font-size: 1em;
-				}
-
-			}
-
-			&:first-child {
-				height: 45vh;
-				width: 60%;
-				margin-left: 0;
-			}
-
-			&:nth-child(2),
-			&:nth-child(3) {
-				height: 45vh;
-				width: 39.5%;
-			}
-
-			&:nth-child(3) {
-				margin-left: 0;
-				height: 35vh;
-			}
-
-		}
-
-	}
 
 	&.single {
 

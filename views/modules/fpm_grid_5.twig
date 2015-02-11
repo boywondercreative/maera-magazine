@@ -1,33 +1,15 @@
-{% if widget.category != 'any' %}
-	{% set term = TimberTerm((widget.category)) %}
-{% endif %}
+<div class="featured-posts">
+	{% for post in posts %}
+		<div class="featured-post">
+			<div class="featured-post-inner" style="background-image:url({{ post.get_thumbnail.get_src|resize(660, 330) }});">
+				<div class="featured-cover"><a href="{{ post.link }}"></a></div>
+				<div class="featured-title">
+					<h2><a href="{{ post.link }}">{{ post.title }}</a></h2>
+					<h3>{{ post.get_preview }}</h3>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
 
-{% set count = 0 %}
-{% if widget.category != 'any' %}
-	<div class="top module grid cat">
-		{% for post in term.get_posts('numberposts=5') %}
-			{% if count < 5 %}
-				{% set count = count + 1 %}
-				<div class="single"{% if post.thumbnail %} style="background-image:url('{{ post.get_thumbnail.get_src|resize(1440, 890) }}');"{% endif %}>
-					<div class="inside">
-						<div class="content"><h3 class="title"><a href="{{ post.link }}">{{ post.title }}</a></h3></div>
-					</div>
-				</div>
-				{% endif %}
-		{% endfor %}
-	</div>
-{% else %}
-	<div class="top module grid">
-		{% for post in posts %}
-			{% if count < 5 %}
-				{% set count = count + 1 %}
-				<div class="single"{% if post.thumbnail %} style="background-image:url('{{ post.get_thumbnail.get_src|resize(1440, 890) }}');"{% endif %}>
-					<div class="inside">
-						<div class="content"><h3 class="title"><a href="{{ post.link }}">{{ post.title }}</a></h3></div>
-					</div>
-				</div>
-			{% endif %}
-		{% endfor %}
-	</div>
-{% endif %}
+</div>
 <div class="clearfix"></div>

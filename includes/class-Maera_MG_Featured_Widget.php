@@ -15,6 +15,7 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 
 	public function widget( $args, $instance ) {
 
+		extract( $args );
 		$context = Maera()->views->context();
 
 		$context['widget'] = array(
@@ -24,6 +25,10 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 			'offset'         => $instance['offset'],
 			'excerpt_length' => $instance['excerpt_length'],
 			'more_text'      => $instance['more_text'],
+			'before_widget'  => $before_widget,
+			'after_widget'   => $after_widget,
+			'before_title'   => $before_title,
+			'after_title'    => $after_title,
 		);
 
 		$context['post']   = Timber::query_post();
@@ -33,8 +38,6 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 			'posts_per_page'   => $instance['per_page'],
 			'offset'           => $instance['offset'],
 		));
-
-		$context['widget'] = $widget;
 
 		Maera()->views->render( 'modules/' . $instance['mode'] . '.twig', $context );
 

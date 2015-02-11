@@ -1,4 +1,11 @@
 {% set count = 0 %}
+{{ widget.before_widget }}
+{% if widget.title %}
+	{{ widget.before_title }}
+	{{ widget.title }}
+	{{ widget.after_title }}
+{% endif %}
+
 <div class="featured-posts-1-4 horizontal row">
 	{% for post in posts %}
 		{% if count == 0 %}
@@ -27,3 +34,4 @@
 	{% endfor %}
 	</ul>
 </div>
+{{ widget.after_widget }}

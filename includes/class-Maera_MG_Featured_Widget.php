@@ -31,11 +31,26 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 			'after_title'    => $after_title,
 		);
 
+		switch ( $instance['mode'] ) {
+			case 'fpm_grid_5' :
+				$per_page = 5;
+				break;
+			case 'fpm_single_big' :
+				$per_page = 1;
+				break;
+			case 'normal_1_4_hor' :
+				$per_page = 5;
+				break;
+			case 'normal_1_2_ver' :
+				$per_page = 3;
+				break;
+		}
+
 		$context['post']   = Timber::query_post();
 		$context['posts']  = Timber::get_posts( array(
 			'post_type'        => $instance['post_type'],
 			'tax_query'        => ( 'any' != $instance['term'] ) ? array( array( 'taxonomy' => 'category', 'terms' => $instance['term'] ) ) : '',
-			'posts_per_page'   => $instance['per_page'],
+			'posts_per_page'   => $per_page,
 			'offset'           => $instance['offset'],
 		));
 
@@ -51,9 +66,7 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 		$instance['title']           = strip_tags( $new_instance['title'] );
 		$instance['mode']            = strip_tags( $new_instance['mode'] );
 		$instance['term']            = strip_tags( $new_instance['term'] );
-		$instance['per_page']        = strip_tags( $new_instance['per_page'] );
 		$instance['offset']          = strip_tags( $new_instance['offset'] );
-		$instance['excerpt_length']  = strip_tags( $new_instance['excerpt_length'] );
 		$instance['more_text']       = strip_tags( $new_instance['more_text'] );
 
 		return $instance;
@@ -65,10 +78,7 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 		$defaults = array(
 			'title'           => 'Latest Articles',
 			'term'            => 'any',
-			'per_page'        => 5,
 			'offset'          => 0,
-			'thumb'           => true,
-			'thumb_float'     => 1,
 			'excerpt_length'  => 20,
 			'more_text'       => __( 'Read More', 'maera_mg' ),
 		);
@@ -77,6 +87,7 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 			'fpm_grid_5'     => __( 'BIG - 5-post grid', 'maera_mg' ),
 			'fpm_single_big' => __( 'BIG - Single Post', 'maera_mg' ),
 			'normal_1_4_hor' => __( 'NORMAL - Horizontal - 1 big, 4 smaller', 'maera_mg' ),
+			'normal_1_2_ver' => __( 'NORMAL - Vertical - 1 big, 2 smaller', 'maera_mg' ),
 		);
 
 		$instance = wp_parse_args( ( array ) $instance, $defaults );
@@ -111,18 +122,8 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 			</tr>
 
 			<tr>
-				<td><?php _e( 'Number of Posts to display. Does not apply to all modes','maera_mg' ); ?></td>
-				<td><input id="<?php echo $this->get_field_id( 'per_page' ); ?>" name="<?php echo $this->get_field_name( 'per_page' ); ?>" value="<?php echo $instance['per_page']; ?>" type="number" /></td>
-			</tr>
-
-			<tr>
 				<td><?php _e( 'Offset','maera_mg' ); ?></td>
 				<td><input id="<?php echo $this->get_field_id( 'per_page' ); ?>" name="<?php echo $this->get_field_name( 'offset' ); ?>" value="<?php echo $instance['offset']; ?>" type="number" /></td>
-			</tr>
-
-			<tr>
-				<td><?php _e( 'Excerpt Length','maera_mg' ); ?></td>
-				<td><input id="<?php echo $this->get_field_id( 'excerpt_length' ); ?>" name="<?php echo $this->get_field_name( 'excerpt_length' ); ?>" value="<?php echo $instance['excerpt_length']; ?>" type="number" /></td>
 			</tr>
 
 			<tr>

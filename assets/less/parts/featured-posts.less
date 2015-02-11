@@ -102,7 +102,8 @@
 	}
 }
 
-.featured-posts-1-4.horizontal.row {
+.featured-posts-1-4.horizontal,
+.featured-posts-1-4.vertical {
 	padding-left: .5rem;
 	padding-right: .5rem;
 	padding-top: 1rem;
@@ -119,16 +120,20 @@
 		}
 	}
 
-	.left {
+	.left,
+	.top {
 		display: block;
 		position: relative;
 		background: #fff;
 		border: 1px solid #f5f5f5;
 		border-right: none;
 		padding: 1rem;
-		.readmore {
-			position: absolute;
-			margin-top: 1rem;
+		.preview a {
+			color: #fff;
+			text-decoration: none;
+			padding: .3rem .7rem;
+			font-size: .75rem;
+			line-height: 1.5rem;
 		}
 		.post-title {
 			font-weight: 400;
@@ -137,7 +142,8 @@
 			margin-bottom: .8rem;
 		}
 	}
-	.right {
+	.right,
+	.bottom {
 		border: 1px solid #f5f5f5;
 		border-left: none;
 		list-style: none;
@@ -165,5 +171,24 @@
 				font-weight: normal;
 			}
 		}
+	}
+
+	.bottom {
+		li {
+			border-left: none;
+			&:first-child {
+				border-top: 3px solid #eaeaea;
+			}
+		}
+	}
+}
+
+.maera_latest_posts_article {
+	h1, h2, h3, h4, h5 {
+		font-weight: normal;
+	}
+	a {
+		text-decoration: none;
+		color: #444;
 	}
 }

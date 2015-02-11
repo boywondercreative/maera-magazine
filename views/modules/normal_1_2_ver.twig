@@ -6,10 +6,10 @@
 	{{ widget.after_title }}
 {% endif %}
 
-<div class="featured-posts-1-4 horizontal row inside">
+<div class="featured-posts-1-4 vertical row inside">
 	{% for post in posts %}
 		{% if count == 0 %}
-			<div class="col-md-6 left">
+			<div class="top">
 				<a href="{{ post.link }}"><img src="{{ post.get_thumbnail.get_src|resize(470, 250) }}"></a>
 				<h3 class="post-title">{{ post.title }}</h3>
 				<div class="post-meta">
@@ -18,7 +18,7 @@
 				</div>
 				<div class="preview">{{ post.get_preview(20, true, '<br>'~widget.more_text, true) }}</div>
 			</div>
-			<ul class="col-md-6 right">
+			<ul class="bottom">
 		{% else %}
 				<li>
 					<a href="{{ post.link }}"><img class="alignleft" src="{{ post.get_thumbnail.get_src|resize(110, 75) }}"></a>

@@ -5,17 +5,21 @@
 	{% do action( 'maera/content/before', post.ID ) %}
 	<div class="content" id="content" itemprop="mainContentOfPage">
 		<div class="front-top-wrapper">
-			<div class="inside{% if theme.theme_mod('front_top_container', 1) == 1 %} container{% endif %}">
+			<div class="inside container">
 				{{ sidebar.front_top }}
 			</div>
 		</div>
 		<div class="content-primary-wrapper {{ 'main'|apply_filters( 'maera/section_class/wrapper' ) }}">
-			<main class="{{ 'main'|apply_filters( 'maera/section_class/content' ) }}inside{% if theme.theme_mod('main_container', 1) == 1 %} container{% endif %}" role="main">
-				{% if theme.theme_mod('main_container', 1) == 1 %}<div class="row">{% endif %}
-				{{ sidebar.front_main }}
-				{% if theme.theme_mod('main_container', 1) == 1 %}</div>{% endif %}
-			</main><!-- /.main -->
-			{% include 'sidebar.twig'|apply_filters('maera/sidebar_template') %}
+			<div class="container">
+				<div class="row">
+					<main class="col-md {{ 'main'|apply_filters( 'maera/section_class/content' ) }} inside" role="main">
+						{% if theme.theme_mod('main_container', 1) == 1 %}<div class="row">{% endif %}
+						{{ sidebar.front_main }}
+						{% if theme.theme_mod('main_container', 1) == 1 %}</div>{% endif %}
+					</main><!-- /.main -->
+					{% include 'sidebar.twig'|apply_filters('maera/sidebar_template') %}
+				</div>
+			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div><!-- /#content -->

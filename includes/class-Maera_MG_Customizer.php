@@ -69,15 +69,6 @@ class Maera_MG_Customizer {
 		);
 
 		$controls[] = array(
-			'type'     => 'checkbox',
-			'setting'  => 'main_container',
-			'label'    => __( 'Main area container', 'maera_mg' ),
-			'section'  => 'main_style',
-			'default'  => 1,
-			'priority' => 3,
-		);
-
-		$controls[] = array(
 			'type'         => 'background',
 			'setting'      => 'main_bg',
 			'label'        => __( 'Background', 'textdomain' ),
@@ -93,15 +84,6 @@ class Maera_MG_Customizer {
 			),
 			'priority' => 3,
 			'output' => '.content-primary-wrapper.main'
-		);
-
-		$controls[] = array(
-			'type'     => 'checkbox',
-			'setting'  => 'front_top_container',
-			'label'    => __( 'Front-Top widget area container', 'maera_mg' ),
-			'section'  => 'front_top_style',
-			'default'  => 1,
-			'priority' => 3,
 		);
 
 		$controls[] = array(

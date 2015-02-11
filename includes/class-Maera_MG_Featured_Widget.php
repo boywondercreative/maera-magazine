@@ -71,8 +71,9 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 		);
 
 		$modes = array(
-			'fpm_grid_5'     => __( '5-post grid', 'maera_mg' ),
-			'fpm_single_big' => __( 'Single Post - BIG', 'maera_mg' ),
+			'fpm_grid_5'     => __( 'BIG - 5-post grid', 'maera_mg' ),
+			'fpm_single_big' => __( 'BIG - Single Post', 'maera_mg' ),
+			'normal_1_4_hor' => __( 'NORMAL - Horizontal - 1 big, 4 smaller', 'maera_mg' ),
 		);
 
 		$instance = wp_parse_args( ( array ) $instance, $defaults );

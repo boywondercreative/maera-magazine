@@ -63,6 +63,7 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
             require_once( __DIR__ . '/includes/class-Maera_MG_Featured_Widget.php');
             require_once( __DIR__ . '/includes/class-Maera_MG_Timber.php');
 			require_once( __DIR__ . '/includes/class-Maera_MG_Widget_Classes.php' );
+			require_once( __DIR__ . '/includes/class-Maera_MG_Custom_Menu_Widget.php' );
 
             $this->customizer     = new Maera_MG_Customizer();
             $this->enqueue        = new Maera_MG_Enqueue();

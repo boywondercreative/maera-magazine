@@ -31,6 +31,10 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 			'after_title'    => $after_title,
 		);
 
+		if ( ! isset ( $instance['mode'] ) || empty( $instance['mode'] ) ) {
+			$instance['mode'] = 'fpm_none';
+		}
+
 		switch ( $instance['mode'] ) {
 			case 'fpm_grid_5' :
 				$per_page = 5;
@@ -48,7 +52,7 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 
 		$context['post']   = Timber::query_post();
 		$context['posts']  = Timber::get_posts( array(
-			'post_type'        => $instance['post_type'],
+			'post_type'        => 'post',
 			'tax_query'        => ( 'any' != $instance['term'] ) ? array( array( 'taxonomy' => 'category', 'terms' => $instance['term'] ) ) : '',
 			'posts_per_page'   => $per_page,
 			'offset'           => $instance['offset'],

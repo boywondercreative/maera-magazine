@@ -13692,3 +13692,41 @@ img {
 .module.single h3 {
   margin-top: 0;
 }
+.palette-turquoise,
+.palette-green-sea,
+.palette-emerald,
+.palette-nephritis,
+.palette-peter-river,
+.palette-belize-hole,
+.palette-amethyst,
+.palette-wisteria,
+.palette-wet-asphalt,
+.palette-midnight-blue,
+.palette-sun-flower,
+.palette-orange,
+.palette-carrot,
+.palette-pumpkin,
+.palette-alizarin,
+.palette-pomegranate,
+.palette-asbestos {
+  color: #fff;
+}
+.palette-turquoise a,
+.palette-green-sea a,
+.palette-emerald a,
+.palette-nephritis a,
+.palette-peter-river a,
+.palette-belize-hole a,
+.palette-amethyst a,
+.palette-wisteria a,
+.palette-wet-asphalt a,
+.palette-midnight-blue a,
+.palette-sun-flower a,
+.palette-orange a,
+.palette-carrot a,
+.palette-pumpkin a,
+.palette-alizarin a,
+.palette-pomegranate a,
+.palette-asbestos a {
+  color: #fff;
+}

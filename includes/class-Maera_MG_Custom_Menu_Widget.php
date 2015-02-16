@@ -31,7 +31,7 @@ class Maera_MG_Custom_Menu_Widget extends WP_Widget {
 		}
 
 		$context['menu'] = new TimberMenu( (int) $instance['nav_menu'] );
-		Maera()->views->render( 'menus/simple-horizontal-responsive.twig', $context );
+		Maera()->views->render( 'menus/bs-nav.twig', $context );
 
 		echo $args['after_widget'];
 	}

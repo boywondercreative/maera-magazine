@@ -3,8 +3,7 @@
 		{% for item in menu.get_items %}
 			<li class="{{ item.classes | join(' ') }} first-level off first{% if 'current-menu-item' in item.classes %} active{% endif %}">
 				<a class="nav-main-link{% if 'current-menu-item' in item.classes %} active{% endif %}" href="{{item.get_link}}">{{ item.title }}</a>
-				<br>-------
-				{{dump(item)}}
+				<br>
 				<small>{{ item.attr_title }}</small>
 			</li>
 		{% endfor %}

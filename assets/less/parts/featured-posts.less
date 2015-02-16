@@ -85,7 +85,14 @@
 
 .featured-posts-1-4.horizontal,
 .featured-posts-1-2.vertical {
-	display: flex;
+	.panel-body {
+		padding-top: 0;
+		padding-bottom: 0;
+		.inside {
+			display: flex;
+		}
+	}
+
 	.post-meta {
 		color: #666;
 		font-size: 12px;
@@ -97,41 +104,38 @@
 
 	.left,
 	.top {
+		padding-top: 15px;
+		padding-bottom: 15px;
 		float:none;
 		display: block;
 		position: relative;
 		background: #fff;
-		border: 1px solid #f5f5f5;
 		border-right: none;
-		.preview a {
-			color: #fff;
-			text-decoration: none;
+		.preview {
+			font-size: 14px;
 		}
 		.post-title {
 			font-weight: 400;
-			font-size: 24px;
+			font-size: 18px;
 		}
 	}
 	.right,
 	.bottom {
 		float:none;
-		border: 1px solid #f5f5f5;
+		padding: 15px;
 		border-left: none;
 		margin: 0;
-		padding: 0;
 		background: #f7f7f7;
-		border-top: 1px solid #fff;
-		border-bottom: 1px solid #eaeaea;
 		-webkit-transition: all .40s;
 		-moz-transition: all .40s;
 		-o-transition: all .40s;
 		transition: all .40s;
 		border-left: 3px solid #eaeaea;
 		.media {
-			padding: 10px;
 			background: none;
 			background: transparent;
 			border: none;
+			border-bottom: 1px solid #eaeaea;
 
 			img {
 				margin-top: 0;

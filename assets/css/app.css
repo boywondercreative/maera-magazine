@@ -13555,8 +13555,13 @@ footer p {
 .featured-posts .featured-post:hover .featured-title {
   bottom: 0;
 }
-.featured-posts-1-4.horizontal,
-.featured-posts-1-2.vertical {
+.featured-posts-1-4.horizontal .panel-body,
+.featured-posts-1-2.vertical .panel-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.featured-posts-1-4.horizontal .panel-body .inside,
+.featured-posts-1-2.vertical .panel-body .inside {
   display: flex;
 }
 .featured-posts-1-4.horizontal .post-meta,
@@ -13573,39 +13578,36 @@ footer p {
 .featured-posts-1-2.vertical .left,
 .featured-posts-1-4.horizontal .top,
 .featured-posts-1-2.vertical .top {
+  padding-top: 15px;
+  padding-bottom: 15px;
   float: none;
   display: block;
   position: relative;
   background: #fff;
-  border: 1px solid #f5f5f5;
   border-right: none;
 }
-.featured-posts-1-4.horizontal .left .preview a,
-.featured-posts-1-2.vertical .left .preview a,
-.featured-posts-1-4.horizontal .top .preview a,
-.featured-posts-1-2.vertical .top .preview a {
-  color: #fff;
-  text-decoration: none;
+.featured-posts-1-4.horizontal .left .preview,
+.featured-posts-1-2.vertical .left .preview,
+.featured-posts-1-4.horizontal .top .preview,
+.featured-posts-1-2.vertical .top .preview {
+  font-size: 14px;
 }
 .featured-posts-1-4.horizontal .left .post-title,
 .featured-posts-1-2.vertical .left .post-title,
 .featured-posts-1-4.horizontal .top .post-title,
 .featured-posts-1-2.vertical .top .post-title {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
 }
 .featured-posts-1-4.horizontal .right,
 .featured-posts-1-2.vertical .right,
 .featured-posts-1-4.horizontal .bottom,
 .featured-posts-1-2.vertical .bottom {
   float: none;
-  border: 1px solid #f5f5f5;
+  padding: 15px;
   border-left: none;
   margin: 0;
-  padding: 0;
   background: #f7f7f7;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #eaeaea;
   -webkit-transition: all .40s;
   -moz-transition: all .40s;
   -o-transition: all .40s;
@@ -13616,10 +13618,10 @@ footer p {
 .featured-posts-1-2.vertical .right .media,
 .featured-posts-1-4.horizontal .bottom .media,
 .featured-posts-1-2.vertical .bottom .media {
-  padding: 10px;
   background: none;
   background: transparent;
   border: none;
+  border-bottom: 1px solid #eaeaea;
 }
 .featured-posts-1-4.horizontal .right .media img,
 .featured-posts-1-2.vertical .right .media img,

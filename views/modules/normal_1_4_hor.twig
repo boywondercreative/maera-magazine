@@ -1,42 +1,44 @@
 {% set count = 0 %}
 {{ widget.before_widget }}
-{% if widget.title %}
-	{{ widget.before_title }}
-	{{ widget.title }}
-	{{ widget.after_title }}
-{% endif %}
-
-<div class="featured-posts-1-4 horizontal row inside">
-	{% for post in posts %}
-		{% if count == 0 %}
-			<div class="col-md-6 left">
-				<a href="{{ post.link }}"><img src="{{ post.get_thumbnail.get_src|resize(580, 309) }}"></a>
-				<h3 class="post-title"><a href="{{ post.link }}">{{ post.title }}</a></h3>
-				<div class="post-meta">
-					<span class="dateline"><span class="dashicons dashicons-clock"></span> {{ post.post_date_modified|date }}</span>
-					<span class="comments"><span class="dashicons dashicons-admin-comments"></span>{{ post.comment_count }}</span>
-				</div>
-				<div class="preview">{{ post.get_preview(20, true, '<br>'~widget.more_text, true) }}</div>
-			</div>
-			<div class="col-md-6 right list-group">
-		{% else %}
-			<div class="media">
-				<div class="media-left">
-					<a href="{{ post.link }}"><img src="{{ post.get_thumbnail.get_src|resize(110, 75) }}"></a>
-				</div>
-				<div class="media-body">
-					<div class="media-heading">
-						<h4 class="post-title">{{ post.title }}</h4>
+<div class="panel panel-default featured-posts-1-4 horizontal">
+	{% if widget.title %}<div class="panel-heading">{{ widget.title }}</div>{% endif %}
+	<div class="panel-body">
+		<div class="row inside">
+			{% for post in posts %}
+				{% if count == 0 %}
+					<div class="col-md-6 left">
+						<a href="{{ post.link }}"><img src="{{ post.get_thumbnail.get_src|resize(580, 309) }}"></a>
+						<h3 class="post-title"><a href="{{ post.link }}">{{ post.title }}</a></h3>
+						<div class="post-meta">
+							<span class="dateline"><span class="dashicons dashicons-clock"></span> {{ post.post_date_modified|date }}</span>
+							<span class="comments"><span class="dashicons dashicons-admin-comments"></span>{{ post.comment_count }}</span>
+						</div>
+						<div class="preview">
+							{{ post.get_preview(20, true, '', true) }}
+							<br>
+							<a href="{{ post.link }}" class="btn btn-primary btn-sm">{{ widget.more_text }}</a>
+						</div>
 					</div>
-					<div class="post-meta">
-						<span class="dateline"><span class="dashicons dashicons-clock"></span> {{ post.post_date_modified|date }}</span>
-						<span class="comments"><span class="dashicons dashicons-admin-comments"></span>{{ post.comment_count }}</span>
+					<div class="col-md-6 right list-group">
+				{% else %}
+					<div class="media">
+						<div class="media-left">
+							<a href="{{ post.link }}"><img src="{{ post.get_thumbnail.get_src|resize(110, 75) }}"></a>
+						</div>
+						<div class="media-body">
+							<div class="media-heading">
+								<h4 class="post-title">{{ post.title }}</h4>
+							</div>
+							<div class="post-meta">
+								<span class="dateline"><span class="dashicons dashicons-clock"></span> {{ post.post_date_modified|date }}</span>
+								<span class="comments"><span class="dashicons dashicons-admin-comments"></span>{{ post.comment_count }}</span>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		{% endif %}
-		{% set count = count + 1 %}
-	{% endfor %}
-</div>
+				{% endif %}
+				{% set count = count + 1 %}
+			{% endfor %}
+		</div>
+	</div>
 </div>
 {{ widget.after_widget }}

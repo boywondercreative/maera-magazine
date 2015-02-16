@@ -1,31 +1,21 @@
-{% set fpm_top_cat = theme.theme_mod('fpm_top_cat', 'all') %}
-{% if fpm_top_cat != 'all' %}
-	{% set term = TimberTerm((fpm_top_cat)) %}
+{{ widget.before_widget }}
+{% if widget.title %}
+	{{ widget.before_title }}
+	{{ widget.title }}
+	{{ widget.after_title }}
 {% endif %}
-
-{% set count = 0 %}
-{% if fpm_top_cat != 'all' %}
-	<div class="top module single cat">
-		{% for post in term.get_posts('numberposts=1') %}
-			<a class="featured-image" href="{{ post.link }}"><img src="{{ post.get_thumbnail.get_src|resize(1440, 890) }}"></a>
-			<div class="content">
-				<h2 class="title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
-				{{ post.get_preview(90, false, '', true) }}
-			</div>
-		{% endfor %}
-	</div>
-{% else %}
-	<div class="top module single">
-		{% for post in posts %}
-			{% if count < 1 %}
-				{% set count = count + 1 %}
+<div class="top module single">
+	{% for post in posts %}
+		<div class="[maera_grid_row_class]">
+			<div class="[maera_grid_col_6]">
 				<a class="featured-image" href="{{ post.link }}"><img src="{{ post.get_thumbnail.get_src|resize(1440, 890) }}"></a>
-				<div class="content">
-					<h2 class="title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
-					{{ post.get_preview(90, false, '', true) }}
-				</div>
-			{% endif %}
-		{% endfor %}
-	</div>
-{% endif %}
+			</div>
+			<div class="content [maera_grid_col_6]">
+				<h3 class="title"><a href="{{ post.link }}">{{ post.title }}</a></h3>
+				{{ post.get_preview(60, false, '', true) }}
+			</div>
+		</div>
+	{% endfor %}
+</div>
 <div class="clearfix"></div>
+{{ widget.after_widget }}

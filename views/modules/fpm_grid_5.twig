@@ -1,11 +1,22 @@
-<div class="featured-posts">
+{{ widget.before_widget }}
+{% if widget.title %}
+	{{ widget.before_title }}
+	{{ widget.title }}
+	{{ widget.after_title }}
+{% endif %}
+<div class="featured-posts grid-5 [maera_grid_row_class]">
+	{% set post_nr = 0 %}
 	{% for post in posts %}
-		<div class="featured-post">
+		{% set post_nr = post_nr + 1 %}
+		{% if post_nr == 1 %}{% set col_width = 7 %}{% endif %}
+		{% if post_nr == 2 %}{% set col_width = 5 %}{% endif %}
+		{% if post_nr >= 3 %}{% set col_width = 4 %}{% endif %}
+		<div class="featured-post [maera_grid_col_{{ col_width }}]">
 			<div class="featured-post-inner" style="background-image:url({{ post.get_thumbnail.get_src|resize(660, 330) }});">
 				<div class="featured-cover"><a href="{{ post.link }}"></a></div>
 				<div class="featured-title">
-					<h2><a href="{{ post.link }}">{{ post.title }}</a></h2>
-					<h3>{{ post.get_preview }}</h3>
+					<p class="title"><a href="{{ post.link }}">{{ post.title }}</a></p>
+					<span class="excerpt">{{ post.get_preview(30, false, '', true) }}</span>
 				</div>
 			</div>
 		</div>
@@ -13,3 +24,4 @@
 
 </div>
 <div class="clearfix"></div>
+{{ widget.after_widget }}

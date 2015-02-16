@@ -45,6 +45,7 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
 		public $sidebars;
 		public $timber;
 		public $widget_classes;
+        public $scripts;
 
         /**
          * Class constructor
@@ -63,7 +64,8 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
             require_once( __DIR__ . '/includes/class-Maera_MG_Featured_Widget.php');
             require_once( __DIR__ . '/includes/class-Maera_MG_Timber.php');
 			require_once( __DIR__ . '/includes/class-Maera_MG_Widget_Classes.php' );
-			require_once( __DIR__ . '/includes/class-Maera_MG_Custom_Menu_Widget.php' );
+            require_once( __DIR__ . '/includes/class-Maera_MG_Custom_Menu_Widget.php' );
+            require_once( __DIR__ . '/includes/class-Maera_MG_Scripts.php' );
 
             $this->customizer     = new Maera_MG_Customizer();
             $this->enqueue        = new Maera_MG_Enqueue();
@@ -71,6 +73,7 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
             $this->sidebars       = new Maera_MG_Widget_Areas();
             $this->timber         = new Maera_MG_Timber();
 			$this->widget_classes = new Maera_MG_Widget_Classes();
+            $this->scripts        = new Maera_MG_Scripts();
 
         }
 

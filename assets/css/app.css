@@ -13643,21 +13643,9 @@ footer p {
   font-weight: normal;
   font-size: 16px;
 }
-.featured-posts-1-4.horizontal .top,
-.featured-posts-1-2.vertical .top {
-  border: 1px solid #eaeaea;
-  border-bottom: none;
-}
 .featured-posts-1-4.horizontal .bottom,
 .featured-posts-1-2.vertical .bottom {
-  border: 1px solid #eaeaea;
-}
-.featured-posts-1-4.horizontal .bottom li,
-.featured-posts-1-2.vertical .bottom li {
   border-left: none;
-}
-.featured-posts-1-4.horizontal .bottom li:first-child,
-.featured-posts-1-2.vertical .bottom li:first-child {
   border-top: 3px solid #eaeaea;
 }
 .featured-posts-1-2.vertical .panel-body .inside {

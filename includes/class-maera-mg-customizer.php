@@ -55,6 +55,23 @@ class Maera_MG_Customizer {
 		);
 
 		$controls[] = array(
+			'type'     => 'sortable',
+			'setting'  => 'single_post_parts',
+			'label'    => __( 'Single Post Parts', 'maera_mg' ),
+			'section'  => 'single_post',
+			'default'  => '',
+			'priority' => 2,
+			'choices'  => array(
+				'title'    => __( 'Title', 'maera_mg' ),
+				'image'    => __( 'Featured Image', 'maera_mg' ),
+				'content'  => __( 'Post Content', 'maera_mg' ),
+				'meta'     => __( 'Post Meta', 'maera_mg' ),
+				'author'   => __( 'Author', 'maera_mg' ),
+				'comments' => __( 'Comments', 'maera_mg' ),
+			),
+		);
+
+		$controls[] = array(
 			'type'     => 'radio',
 			'mode'     => 'buttonset',
 			'setting'  => 'site_mode',

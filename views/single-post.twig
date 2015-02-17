@@ -1,0 +1,11 @@
+{% set parts_serialized = theme.theme_mod('single_post_parts', '') %}
+{% set parts = function('unserialize', parts_serialized) %}
+
+{% for part in parts %}
+	{% if part == 'title' %}title{% endif %}
+	{% if part == 'image' %}image{% endif %}
+	{% if part == 'content' %}content{% endif %}
+	{% if part == 'meta' %}meta{% endif %}
+	{% if part == 'author' %}author{% endif %}
+	{% if part == 'comments' %}comments{% endif %}
+{% endfor %}

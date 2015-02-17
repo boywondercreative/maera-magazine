@@ -23,7 +23,8 @@ class Maera_MG_Customizer {
             'layout'          => array( 'title' => __( 'Layout', 'maera_mg' ), 'priority' => 50 ),
             'typography'      => array( 'title' => __( 'Typography', 'maera_mg' ), 'priority' => 60, ),
             'colors'          => array( 'title' => __( 'Colors', 'maera_mg' ), 'priority' => 70 ),
-			'background'      => array( 'title' => __( 'Background', 'maera_mg' ), 'priority' => 100 ),
+            'background'      => array( 'title' => __( 'Background', 'maera_mg' ), 'priority' => 100 ),
+            'typo_base'       => array( 'title' => __( 'Base Typography', 'maera_mg' ), 'priority' => 100 ),
         );
 
         foreach ( $sections as $section => $args ) {
@@ -138,6 +139,90 @@ class Maera_MG_Customizer {
 			'priority' => 3,
 			'output' => '.front-top-wrapper',
 		);
+
+        $controls[] = array(
+            'type'     => 'select',
+            'setting'  => 'font_base_family',
+            'label'    => __( 'Base font', 'maera_bs' ),
+            'section'  => 'typo_base',
+            'default'  => '"Helvetica Neue", Helvetica, Arial, sans-serif',
+            'priority' => 20,
+            'choices'  => Kirki_Fonts::get_font_choices(),
+            'output' => array(
+                'element'  => 'body',
+                'property' => 'font-family',
+            ),
+        );
+
+        $controls[] = array(
+            'type'     => 'multicheck',
+            'setting'  => 'font_subsets',
+            'label'    => __( 'Google-Font subsets', 'maera_bs' ),
+            'description' => __( 'The subsets used from Google\'s API.', 'maera_bs' ),
+            'section'  => 'typo_base',
+            'default'  => 'latin',
+            'priority' => 22,
+            'choices'  => Kirki_Fonts::get_google_font_subsets(),
+            'output' => array(
+                'element'  => 'body',
+                'property' => 'font-subset',
+            ),
+        );
+
+        $controls[] = array(
+            'type'     => 'slider',
+            'setting'  => 'font_base_weight',
+            'label'    => __( 'Base Font Weight', 'maera_bs' ),
+            'section'  => 'typo_base',
+            'default'  => 400,
+            'priority' => 24,
+            'choices'  => array(
+                'min'  => 100,
+                'max'  => 900,
+                'step' => 100,
+            ),
+            'output' => array(
+                'element'  => 'body',
+                'property' => 'font-weight',
+            ),
+        );
+
+        $controls[] = array(
+            'type'     => 'slider',
+            'setting'  => 'font_base_size',
+            'label'    => __( 'Base Font Size', 'maera_bs' ),
+            'section'  => 'typo_base',
+            'default'  => 14,
+            'priority' => 25,
+            'choices'  => array(
+                'min'  => 7,
+                'max'  => 48,
+                'step' => 1,
+            ),
+            'output' => array(
+                'element'  => 'body',
+                'property' => 'font-size',
+                'units'    => 'px',
+            ),
+        );
+
+        $controls[] = array(
+            'type'     => 'slider',
+            'setting'  => 'font_base_height',
+            'label'    => __( 'Base Line Height', 'maera_bs' ),
+            'section'  => 'typo_base',
+            'default'  => 1.43,
+            'priority' => 26,
+            'choices'  => array(
+                'min'  => 0,
+                'max'  => 3,
+                'step' => 0.01,
+            ),
+            'output' => array(
+                'element'  => 'body',
+                'property' => 'line-height',
+            ),
+        );
 
         return $controls;
 

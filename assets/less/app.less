@@ -5,17 +5,27 @@
 //
 body {
 	.content-primary-wrapper.main {
-		margin-top: 20px;
-	}
-	#sidebar-primary {
-		float: right;
-	}
-	.main.inside {
-		position: absolute;
-		width: auto;
-	}
-	.main-content-table {
-		position: relative;
+		.container {
+			padding-top: 20px;
+			background: #fff;
+		}
+
+		.main-content-table {
+			display: table;
+			position: relative;
+
+			.main.inside,
+			#sidebar-primary {
+				display: table-cell;
+				width: 100%;
+				float: none;
+				vertical-align: top;
+			}
+
+			.main.inside {
+				width: 100%;
+			}
+		}
 	}
 
 	&.sidebar-300 {

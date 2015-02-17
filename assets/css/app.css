@@ -13662,18 +13662,23 @@ footer p {
   text-decoration: none;
   color: #444;
 }
-body .content-primary-wrapper.main {
-  margin-top: 20px;
+body .content-primary-wrapper.main .container {
+  padding-top: 20px;
+  background: #fff;
 }
-body #sidebar-primary {
-  float: right;
-}
-body .main.inside {
-  position: absolute;
-  width: auto;
-}
-body .main-content-table {
+body .content-primary-wrapper.main .main-content-table {
+  display: table;
   position: relative;
+}
+body .content-primary-wrapper.main .main-content-table .main.inside,
+body .content-primary-wrapper.main .main-content-table #sidebar-primary {
+  display: table-cell;
+  width: 100%;
+  float: none;
+  vertical-align: top;
+}
+body .content-primary-wrapper.main .main-content-table .main.inside {
+  width: 100%;
 }
 body.sidebar-300 #sidebar-primary {
   width: 330px;

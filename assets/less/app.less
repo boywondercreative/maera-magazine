@@ -4,45 +4,60 @@
 // @import 'parts/widget-colors.less';
 //
 body {
-//
-// 	margin: 0;
-//
-// 	#sidebar-primary {
-// 		padding-left: 20px;
-// 		overflow: hidden;
-// 	}
-//
+	.content-primary-wrapper.main {
+		margin-top: 20px;
+	}
+	#sidebar-primary {
+		float: right;
+	}
+	.main.inside {
+		position: absolute;
+		width: auto;
+	}
+	.main-content-table {
+		position: relative;
+	}
+
 	&.sidebar-300 {
 		#sidebar-primary {
-			width: 300px;
-			min-width: 300px;
-			max-width: 300px;
+			width: 330px;
+			min-width: 330px;
+			max-width: 330px;
+		}
+		.main.inside {
+			margin-right: 320px;
 		}
 	}
 
 	&.sidebar-320 {
 		#sidebar-primary {
-			width: 320px;
-			min-width: 320px;
-			max-width: 320px;
+			width: 350px;
+			min-width: 350px;
+			max-width: 350px;
+		}
+		.main.inside {
+			margin-right: 340px;
 		}
 	}
 
 	&.sidebar-336 {
 		#sidebar-primary {
-			width: 336px;
-			min-width: 336px;
-			max-width: 336px;
+			width: 366px;
+			min-width: 366px;
+			max-width: 366px;
+		}
+		.main.inside {
+			margin-right: 356px;
 		}
 	}
 
 }
 
-.content-primary-wrapper.main {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: flex;
-}
+// .content-primary-wrapper.main {
+// 	display: -webkit-flex;
+// 	display: -moz-flex;
+// 	display: flex;
+// }
 //
 // .top.module {
 // 	clear: both;
@@ -140,4 +155,9 @@ img {
 	&-silver {}
 	&-concrete {}
 	&-asbestos {}
+}
+
+.global.header {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }

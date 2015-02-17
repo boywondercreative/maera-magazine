@@ -15,6 +15,7 @@ class Maera_MG_Customizer {
     function customizer_sections( $wp_customize ) {
 
         $sections = array(
+			'header'          => array( 'title' => __( 'Header Options', 'maera_mg' ), 'priority' => 1, ),
 			'main_style'      => array( 'title' => __( 'Main Area styles', 'maera_mg' ), 'priority' => 10, ),
 			'front_top_style' => array( 'title' => __( 'Frontpage-Top styles', 'maera_mg' ), 'priority' => 20, ),
             'archives'        => array( 'title' => __( 'Archives', 'maera_mg' ), 'priority' => 30, ),
@@ -86,6 +87,23 @@ class Maera_MG_Customizer {
 			'output' => '.content-primary-wrapper.main'
 		);
 
+		$controls[] = array(
+			'type'         => 'background',
+			'setting'      => 'header_bg',
+			'label'        => __( 'Background', 'textdomain' ),
+			'section'      => 'header',
+			'default'      => array(
+				'color'    => '#f7f7f7',
+				'image'    => null,
+				'repeat'   => 'repeat',
+				'size'     => 'inherit',
+				'attach'   => 'inherit',
+				'position' => 'left-top',
+				'opacity'  => 100,
+			),
+			'priority' => 3,
+			'output' => '.global.header'
+		);
 		$controls[] = array(
 			'type'         => 'background',
 			'setting'      => 'front_top_bg',

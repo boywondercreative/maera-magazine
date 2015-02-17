@@ -13,7 +13,7 @@
 			<div class="[maera_grid_container_class]">
 				<div class="[maera_grid_row_class] main-content-table">
 					<main class="[maera_grid_col_8] {{ 'main'|apply_filters( 'maera/section_class/content' ) }} inside" role="main">
-						{{ sidebar.front_main }}
+						<div class="[maera_grid_row_class]">{{ sidebar.front_main }}</div>
 					</main><!-- /.main -->
 					{% include 'sidebar.twig'|apply_filters('maera/sidebar_template') %}
 				</div>

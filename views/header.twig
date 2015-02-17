@@ -1,0 +1,20 @@
+{#<?php#}
+<!DOCTYPE html>
+{% include 'head.twig' %}
+<body class="{{ body_class }}">
+
+    <a href="#content" class="sr-only skip-link screen-reader-text">{{ __( 'Skip to main content', 'maera' ) }}</a>
+
+    {% do action( 'get_header' ) %}
+
+    {% do action( 'maera/header/before', post.ID ) %}
+    <header class="header global" >
+        {% block header %}
+        <div class="container">
+			<div class="row">
+				{{ sidebar.header }}
+			</div>
+        </div>
+        {% endblock %}
+    </header>
+    {% do action( 'maera/header/after', post.ID ) %}

@@ -2,10 +2,27 @@
 {% set parts = function('unserialize', parts_serialized) %}
 
 {% for part in parts %}
-	{% if part == 'title' %}title{% endif %}
-	{% if part == 'image' %}image{% endif %}
-	{% if part == 'content' %}content{% endif %}
-	{% if part == 'meta' %}meta{% endif %}
-	{% if part == 'author' %}author{% endif %}
-	{% if part == 'comments' %}comments{% endif %}
+
+	{% if part == 'title' %}
+		<title itemprop="name">{{ post.title }}</title>
+		<h1 class="entry-title">{{ post.title|apply_filters( 'maera/title' ) }}</h1>
+	{% endif %}
+
+	{% if part == 'image' %}
+		<img class="featured-image" src="{{ post.thumbnail.src }}">
+	{% endif %}
+
+	{% if part == 'content' %}
+		{{ post.content }}
+	{% endif %}
+
+	{% if part == 'meta' %}
+		{% include 'content-single-entry-meta.twig' %}
+	{% endif %}
+
+	<!-- {% if part == 'author' %}author{% endif %} -->
+
+	{% if part == 'comments' %}
+		{% include 'comments.twig' %}
+	{% endif %}
 {% endfor %}

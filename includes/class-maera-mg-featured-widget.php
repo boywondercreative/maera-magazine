@@ -21,9 +21,7 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 		$context['widget'] = array(
 			'title'          => apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base ),
 			'category'       => $instance['term'],
-			'per_page'       => $instance['per_page'],
 			'offset'         => $instance['offset'],
-			'excerpt_length' => $instance['excerpt_length'],
 			'more_text'      => $instance['more_text'],
 			'before_widget'  => $before_widget,
 			'after_widget'   => $after_widget,

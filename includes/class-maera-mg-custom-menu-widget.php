@@ -23,6 +23,7 @@ class Maera_MG_Custom_Menu_Widget extends WP_Widget {
 
 		/** This filter is documented in wp-includes/default-widgets.php */
 		$instance['title'] = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
+		$instance['template'] = ( isset( $instance['template'] ) || ! empty( $instance['template'] ) ) ? $instance['template'] : 'bs-nav';
 
 		echo $args['before_widget'];
 
@@ -31,7 +32,7 @@ class Maera_MG_Custom_Menu_Widget extends WP_Widget {
 		}
 
 		$context['menu'] = new TimberMenu( (int) $instance['nav_menu'] );
-		Maera()->views->render( 'menus/bs-nav.twig', $context );
+		Maera()->views->render( 'menus/' . $instance['template'] . '.twig', $context );
 
 		echo $args['after_widget'];
 	}
@@ -44,12 +45,21 @@ class Maera_MG_Custom_Menu_Widget extends WP_Widget {
 		if ( ! empty( $new_instance['nav_menu'] ) ) {
 			$instance['nav_menu'] = (int) $new_instance['nav_menu'];
 		}
+		if ( ! empty( $new_instance['template'] ) ) {
+			$instance['template'] = $new_instance['template'];
+		}
 		return $instance;
 	}
 
 	public function form( $instance ) {
 		$title = isset( $instance['title'] ) ? $instance['title'] : '';
 		$nav_menu = isset( $instance['nav_menu'] ) ? $instance['nav_menu'] : '';
+		$selected_template = isset( $instance['template'] ) ? $instance['template'] : '';
+
+		$templates = array(
+			'navbar'         => __( 'Navbar', 'maera_mg' ),
+			'navbar-inverse' => __( 'Navbar - Black', 'maera_mg' ),
+		);
 
 		// Get menus
 		$menus = wp_get_nav_menus();
@@ -73,6 +83,20 @@ class Maera_MG_Custom_Menu_Widget extends WP_Widget {
 				echo '<option value="' . $menu->term_id . '"'
 					. selected( $nav_menu, $menu->term_id, false )
 					. '>'. esc_html( $menu->name ) . '</option>';
+			}
+		?>
+			</select>
+		</p>
+
+		<p>
+			<label for="<?php echo $this->get_field_id('template'); ?>"><?php _e('Template:'); ?></label>
+			<select id="<?php echo $this->get_field_id('template'); ?>" name="<?php echo $this->get_field_name('template'); ?>">
+				<option value="0"><?php _e( '&mdash; Select &mdash;' ) ?></option>
+		<?php
+			foreach ( $templates as $file => $label ) {
+				echo '<option value="' . $file . '"'
+					. selected( $selected_template, $file, false )
+					. '>'. esc_html( $label ) . '</option>';
 			}
 		?>
 			</select>

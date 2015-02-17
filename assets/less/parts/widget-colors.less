@@ -1,159 +1,640 @@
 .widget {
+	&.widget_maera_mg_featured {
+		.panel {
+			border-bottom: 5px solid #333;
+		}
+		a {
+			color: #444;
+			&.btn-primary {
+				color: #fff;
+			}
+		}
+	}
 
-	.featured-posts-1-4.vertical .bottom {
-		border-bottom: 5px solid transparent;
+	ul.nav.nav-pills {
+		li a { color: #333; }
+	}
+
+	&.cyan {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @cyan;
+				a.btn-primary {
+					background: @cyan;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @cyan;
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.navbar-default {
+			background: @cyan;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@cyan, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @cyan;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.teal {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @teal;
+				a.btn-primary {
+					background: @teal;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @teal;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @teal;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@teal, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @teal;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.green {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @green;
+				a.btn-primary {
+					background: @green;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				a { color: @green; }
+				&.active {
+					a {
+						background: @green;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @green;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@green, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @green;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.dark-green {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @dark-green;
+				a.btn-primary {
+					background: @dark-green;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @dark-green;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @dark-green;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@dark-green, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @dark-green;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.blue {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @blue;
+				a.btn-primary {
+					background: @blue;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @blue;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @blue;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@blue, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @blue;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.indigo {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @indigo;
+				a.btn-primary {
+					background: @indigo;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @indigo;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @indigo;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@indigo, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @indigo;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.pink {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @pink;
+				a.btn-primary {
+					background: @pink;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @pink;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @pink;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@pink, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @pink;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.purple {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @purple;
+				a.btn-primary {
+					background: @purple;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @purple;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @purple;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@purple, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @purple;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.brown {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @brown;
+				a.btn-primary {
+					background: @brown;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @brown;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @brown;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@brown, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @brown;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.blue-grey {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @blue-grey;
+				a.btn-primary {
+					background: @blue-grey;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				a { color: @blue-grey; }
+				&.active {
+					a {
+						background: @blue-grey;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @blue-grey;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@blue-grey, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @blue-grey;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.amber {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @amber;
+				a.btn-primary {
+					background: @amber;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @amber;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @amber;
+			.navbar-nav > li > a { color: #333; }
+			.navbar-nav > .active > a { background: lighten(@amber, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @amber;
+				a { color: #333; }
+			}
+		}
+	}
+
+	&.orange {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @orange;
+				a.btn-primary {
+					background: @orange;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @orange;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @orange;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@orange, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @orange;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.deep-orange {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @deep-orange;
+				a.btn-primary {
+					background: @deep-orange;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @deep-orange;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @deep-orange;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@deep-orange, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @deep-orange;
+				a { color: #fff; }
+			}
+		}
+	}
+
+	&.yellow {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @yellow;
+				a.btn-primary {
+					background: @yellow;
+					color: #222;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @yellow;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @yellow;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@yellow, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @yellow;
+				a { color: #fff; }
+			}
+		}
 	}
 
 	&.red {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #f44336;
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @red;
+				a.btn-primary {
+					background: @red;
+				}
+			}
 		}
-		.preview a {
-			background: #f44336;
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @red;
+						color: #fff;
+					}
+				}
+			}
 		}
-	}
-	&.pink {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #e91e63;
-		}
-		.preview a {
-			background: #e91e63;
-		}
-	}
-	&.purple {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #9c27b0;
-		}
-		.preview a {
-			background: #9c27b0;
-		}
-	}
-	&.deep-purple {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #673ab7;
-		}
-		.preview a {
-			background: #673ab7;
+		.navbar-default {
+			background: @red;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@red, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @red;
+				a { color: #fff; }
+			}
 		}
 	}
-	&.indigo {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #3f51b5;
+
+	&.red-dark {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @red-dark;
+				a.btn-primary {
+					background: @red-dark;
+				}
+			}
 		}
-		.preview a {
-			background: #3f51b5;
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @red-dark;
+						color: #fff;
+					}
+				}
+			}
 		}
-	}
-	&.blue {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #2196f3;
-		}
-		.preview a {
-			background: #2196f3;
-		}
-	}
-	&.light-blue {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #03a9f4;
-		}
-		.preview a {
-			background: #03a9f4;
-		}
-	}
-	&.cyan {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #00bcd4;
-		}
-		.preview a {
-			background: #00bcd4;
-		}
-	}
-	&.teal {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #009688;
-		}
-		.preview a {
-			background: #009688;
+		.navbar-default {
+			background: @red-dark;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@red-dark, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @red-dark;
+				a { color: #fff; }
+			}
 		}
 	}
-	&.green {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #4caf50;
+
+	&.almost-white {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @almost-white;
+				a.btn-primary {
+					background: @almost-white;
+					color: #333;
+				}
+			}
 		}
-		.preview a {
-			background: #4caf50;
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @almost-white;
+					}
+				}
+			}
 		}
-	}
-	&.light-green {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #8bc34a;
-		}
-		.preview a {
-			background: #8bc34a;
-		}
-	}
-	&.lime {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #cddc39;
-		}
-		.preview a {
-			background: #cddc39;
-		}
-	}
-	&.yellow {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #ffeb3b;
-		}
-		.preview a {
-			background: #ffeb3b;
-		}
-	}
-	&.amber {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #ffc107;
-		}
-		.preview a {
-			background: #ffc107;
+		.navbar-default {
+			background: @almost-white;
+			.navbar-nav > li > a { color: #333; }
+			.navbar-nav > .active > a { background: lighten(@almost-white, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @cyan;
+				a { color: #333; }
+			}
 		}
 	}
-	&.orange {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #ff9800;
+
+	&.almost-grey {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @almost-grey;
+				a.btn-primary {
+					background: @almost-grey;
+					color: #333;
+				}
+			}
 		}
-		.preview a {
-			background: #ff9800;
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @almost-grey;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @almost-grey;
+			.navbar-nav > li > a { color: #333; }
+			.navbar-nav > .active > a { background: lighten(@almost-grey, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @almost-grey;
+				a { color: #fff; }
+			}
 		}
 	}
-	&.deep-orange {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #ff5722;
+
+	&.concrete-grey {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @concrete-grey;
+				a.btn-primary {
+					background: @concrete-grey;
+				}
+			}
 		}
-		.preview a {
-			background: #ff5722;
+
+		ul.nav.nav-pills {
+			li {
+				&.active {
+					a {
+						background: @concrete-grey;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @concrete-grey;
+			.navbar-nav > li > a { color: #333; }
+			.navbar-nav > .active > a { background: lighten(@concrete-grey, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @concrete-grey;
+				a { color: #333; }
+			}
 		}
 	}
-	&.brown {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #795548;
+
+	&.asbestos-grey {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @asbestos-grey;
+				a.btn-primary {
+					background: @asbestos-grey;
+				}
+			}
 		}
-		.preview a {
-			background: #795548;
+
+		ul.nav.nav-pills {
+			li {
+				a { color: @asbestos-grey; }
+				&.active {
+					a {
+						background: @asbestos-grey;
+						color: #fff;
+					}
+				}
+			}
 		}
-	}
-	&.grey {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #9e9e9e;
-		}
-		.preview a {
-			background: #9e9e9e;
-		}
-	}
-	&.blue-grey {
-		.featured-posts-1-4.vertical .bottom {
-			border-bottom-color: #607d8b;
-		}
-		.preview a {
-			background: #607d8b;
+		.navbar-default {
+			background: @asbestos-grey;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@asbestos-grey, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @asbestos-grey;
+				a { color: #fff; }
+			}
 		}
 	}
 }

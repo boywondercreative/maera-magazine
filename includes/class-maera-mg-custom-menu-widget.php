@@ -57,8 +57,9 @@ class Maera_MG_Custom_Menu_Widget extends WP_Widget {
 		$selected_template = isset( $instance['template'] ) ? $instance['template'] : '';
 
 		$templates = array(
-			'navbar'         => __( 'Navbar', 'maera_mg' ),
-			'navbar-inverse' => __( 'Navbar - Black', 'maera_mg' ),
+			'navbar'            => __( 'Navbar', 'maera_mg' ),
+			'nav-pills'         => __( 'Nav - Pills', 'maera_mg' ),
+			'nav-pills-stacked' => __( 'Nav - Pills - Stacked', 'maera_mg' ),
 		);
 
 		// Get menus

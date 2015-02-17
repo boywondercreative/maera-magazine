@@ -2,8 +2,9 @@
 @import 'flat-ui/flat-ui.less';
 @import 'parts/featured-posts.less';
 @import 'parts/menus.less';
-// @import 'parts/widget-colors.less';
-//
+@import 'parts/widget-colors.less';
+
+
 body {
 	.content-primary-wrapper.main {
 		.container {
@@ -119,55 +120,6 @@ img {
 	}
 }
 
-.palette {
-	&-cyan,
-	&-teal,
-	&-green,
-	&-dark-green,
-	&-blue,
-	&-indigo,
-	&-pink,
-	&-purple,
-	&-brown,
-	&-blue-grey,
-	&-amber,
-	&-orange,
-	&-deep-orange,
-	&-yellow,
-	&-red,
-	&-red-dark,
-	// &.almost-white,
-	// &.almost-grey,
-	// &.concrete-grey,
-	&-asbestos-grey {
-		color: #fff;
-		a {
-			color: #fff;
-		}
-	}
-
-	&-cyan {}
-	&-teal {}
-	&-green {}
-	&-dark-green {}
-	&-blue {}
-	&-indigo {}
-	&-pink {}
-	&-purple {}
-	&-brown {}
-	&-blue-grey {}
-	&-amber {}
-	&-orange {}
-	&-deep-orange {}
-	&-yellow {}
-	&-red {}
-	&-red-dark {}
-	&-almost-white {}
-	&-almost-grey {}
-	&-concrete-grey {}
-	&-asbestos-grey {}
-}
-
 .global.header {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -184,4 +136,18 @@ img {
 
 .widget .navbar {
 	margin-bottom: 0;
+}
+
+textarea#comment {
+	.form-control;
+	min-height: 9em;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]::-webkit-file-upload-button,
+button {
+	.btn;
+	.btn-primary;
 }

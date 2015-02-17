@@ -95,7 +95,10 @@ class Maera_MG_Featured_Widget extends WP_Widget {
 		$instance = wp_parse_args( ( array ) $instance, $defaults );
 
 		$title = strip_tags( $instance['title'] ); ?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
+		<p>
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:') ?></label>
+			<input type="text" class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo $title; ?>" />
+		</p>
 		<table style="margin-top: 10px;">
 			<tr style="margin: 10px 0;">
 				<td><?php _e( 'Mode:','maera_mg' ); ?></td>

@@ -1,6 +1,6 @@
 {% set count = 0 %}
 {{ widget.before_widget }}
-<div class="panel panel-default featured-posts-1-4 horizontal">
+<div class="panel {% if widget.title %}with-heading{% else %}panel-default{% endif %} featured-posts-1-4 horizontal">
 	{% if widget.title %}<div class="panel-heading">{{ widget.title }}</div>{% endif %}
 	<div class="panel-body">
 		<div class="row inside">
@@ -27,7 +27,7 @@
 						</div>
 						<div class="media-body">
 							<div class="media-heading">
-								<h4 class="post-title">{{ post.title }}</h4>
+								<a href="{{ post.link }}"><h4 class="post-title">{{ post.title }}</h4></a>
 							</div>
 							<div class="post-meta">
 								<span class="dateline"><span class="dashicons dashicons-clock"></span> {{ post.post_date_modified|date }}</span>

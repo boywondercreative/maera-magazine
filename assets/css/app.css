@@ -13720,6 +13720,606 @@ footer p {
 .nav.simple.horizontal.two-levels ul.links li:hover ul.second-level li {
   display: inline-block;
 }
+.widget.widget_maera_mg_featured .panel {
+  border-bottom: 5px solid #333;
+}
+.widget.widget_maera_mg_featured a {
+  color: #444;
+}
+.widget.widget_maera_mg_featured a.btn-primary {
+  color: #fff;
+}
+.widget ul.nav.nav-pills li a {
+  color: #333;
+}
+.widget.cyan.widget_maera_mg_featured .panel,
+.widget.cyan.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #00bcd4;
+}
+.widget.cyan.widget_maera_mg_featured .panel a.btn-primary,
+.widget.cyan.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #00bcd4;
+}
+.widget.cyan ul.nav.nav-pills li.active a {
+  background: #00bcd4;
+  color: #fff;
+}
+.widget.cyan .navbar-default {
+  background: #00bcd4;
+}
+.widget.cyan .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.cyan .navbar-default .navbar-nav > .active > a {
+  background: #00cae3;
+}
+.widget.cyan .navbar-default .dropdown-menu,
+.widget.cyan .navbar-default .select2-drop {
+  background: #00bcd4;
+}
+.widget.cyan .navbar-default .dropdown-menu a,
+.widget.cyan .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.teal.widget_maera_mg_featured .panel,
+.widget.teal.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #009688;
+}
+.widget.teal.widget_maera_mg_featured .panel a.btn-primary,
+.widget.teal.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #009688;
+}
+.widget.teal ul.nav.nav-pills li.active a {
+  background: #009688;
+  color: #fff;
+}
+.widget.teal .navbar-default {
+  background: #009688;
+}
+.widget.teal .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.teal .navbar-default .navbar-nav > .active > a {
+  background: #00a596;
+}
+.widget.teal .navbar-default .dropdown-menu,
+.widget.teal .navbar-default .select2-drop {
+  background: #009688;
+}
+.widget.teal .navbar-default .dropdown-menu a,
+.widget.teal .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.green.widget_maera_mg_featured .panel,
+.widget.green.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #4caf50;
+}
+.widget.green.widget_maera_mg_featured .panel a.btn-primary,
+.widget.green.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #4caf50;
+}
+.widget.green ul.nav.nav-pills li a {
+  color: #4caf50;
+}
+.widget.green ul.nav.nav-pills li.active a {
+  background: #4caf50;
+  color: #fff;
+}
+.widget.green .navbar-default {
+  background: #4caf50;
+}
+.widget.green .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.green .navbar-default .navbar-nav > .active > a {
+  background: #55b559;
+}
+.widget.green .navbar-default .dropdown-menu,
+.widget.green .navbar-default .select2-drop {
+  background: #4caf50;
+}
+.widget.green .navbar-default .dropdown-menu a,
+.widget.green .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.dark-green.widget_maera_mg_featured .panel,
+.widget.dark-green.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #2e7d32;
+}
+.widget.dark-green.widget_maera_mg_featured .panel a.btn-primary,
+.widget.dark-green.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #2e7d32;
+}
+.widget.dark-green ul.nav.nav-pills li.active a {
+  background: #2e7d32;
+  color: #fff;
+}
+.widget.dark-green .navbar-default {
+  background: #2e7d32;
+}
+.widget.dark-green .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.dark-green .navbar-default .navbar-nav > .active > a {
+  background: #328836;
+}
+.widget.dark-green .navbar-default .dropdown-menu,
+.widget.dark-green .navbar-default .select2-drop {
+  background: #2e7d32;
+}
+.widget.dark-green .navbar-default .dropdown-menu a,
+.widget.dark-green .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.blue.widget_maera_mg_featured .panel,
+.widget.blue.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #2196f3;
+}
+.widget.blue.widget_maera_mg_featured .panel a.btn-primary,
+.widget.blue.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #2196f3;
+}
+.widget.blue ul.nav.nav-pills li.active a {
+  background: #2196f3;
+  color: #fff;
+}
+.widget.blue .navbar-default {
+  background: #2196f3;
+}
+.widget.blue .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.blue .navbar-default .navbar-nav > .active > a {
+  background: #309df4;
+}
+.widget.blue .navbar-default .dropdown-menu,
+.widget.blue .navbar-default .select2-drop {
+  background: #2196f3;
+}
+.widget.blue .navbar-default .dropdown-menu a,
+.widget.blue .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.indigo.widget_maera_mg_featured .panel,
+.widget.indigo.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #3f51b5;
+}
+.widget.indigo.widget_maera_mg_featured .panel a.btn-primary,
+.widget.indigo.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #3f51b5;
+}
+.widget.indigo ul.nav.nav-pills li.active a {
+  background: #3f51b5;
+  color: #fff;
+}
+.widget.indigo .navbar-default {
+  background: #3f51b5;
+}
+.widget.indigo .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.indigo .navbar-default .navbar-nav > .active > a {
+  background: #4558be;
+}
+.widget.indigo .navbar-default .dropdown-menu,
+.widget.indigo .navbar-default .select2-drop {
+  background: #3f51b5;
+}
+.widget.indigo .navbar-default .dropdown-menu a,
+.widget.indigo .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.pink.widget_maera_mg_featured .panel,
+.widget.pink.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #e91e63;
+}
+.widget.pink.widget_maera_mg_featured .panel a.btn-primary,
+.widget.pink.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #e91e63;
+}
+.widget.pink ul.nav.nav-pills li.active a {
+  background: #e91e63;
+  color: #fff;
+}
+.widget.pink .navbar-default {
+  background: #e91e63;
+}
+.widget.pink .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.pink .navbar-default .navbar-nav > .active > a {
+  background: #ea2c6d;
+}
+.widget.pink .navbar-default .dropdown-menu,
+.widget.pink .navbar-default .select2-drop {
+  background: #e91e63;
+}
+.widget.pink .navbar-default .dropdown-menu a,
+.widget.pink .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.purple.widget_maera_mg_featured .panel,
+.widget.purple.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #9c27b0;
+}
+.widget.purple.widget_maera_mg_featured .panel a.btn-primary,
+.widget.purple.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #9c27b0;
+}
+.widget.purple ul.nav.nav-pills li.active a {
+  background: #9c27b0;
+  color: #fff;
+}
+.widget.purple .navbar-default {
+  background: #9c27b0;
+}
+.widget.purple .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.purple .navbar-default .navbar-nav > .active > a {
+  background: #a72abd;
+}
+.widget.purple .navbar-default .dropdown-menu,
+.widget.purple .navbar-default .select2-drop {
+  background: #9c27b0;
+}
+.widget.purple .navbar-default .dropdown-menu a,
+.widget.purple .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.brown.widget_maera_mg_featured .panel,
+.widget.brown.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #4e342e;
+}
+.widget.brown.widget_maera_mg_featured .panel a.btn-primary,
+.widget.brown.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #4e342e;
+}
+.widget.brown ul.nav.nav-pills li.active a {
+  background: #4e342e;
+  color: #fff;
+}
+.widget.brown .navbar-default {
+  background: #4e342e;
+}
+.widget.brown .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.brown .navbar-default .navbar-nav > .active > a {
+  background: #583a34;
+}
+.widget.brown .navbar-default .dropdown-menu,
+.widget.brown .navbar-default .select2-drop {
+  background: #4e342e;
+}
+.widget.brown .navbar-default .dropdown-menu a,
+.widget.brown .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.blue-grey.widget_maera_mg_featured .panel,
+.widget.blue-grey.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #263238;
+}
+.widget.blue-grey.widget_maera_mg_featured .panel a.btn-primary,
+.widget.blue-grey.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #263238;
+}
+.widget.blue-grey ul.nav.nav-pills li a {
+  color: #263238;
+}
+.widget.blue-grey ul.nav.nav-pills li.active a {
+  background: #263238;
+  color: #fff;
+}
+.widget.blue-grey .navbar-default {
+  background: #263238;
+}
+.widget.blue-grey .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.blue-grey .navbar-default .navbar-nav > .active > a {
+  background: #2c3a41;
+}
+.widget.blue-grey .navbar-default .dropdown-menu,
+.widget.blue-grey .navbar-default .select2-drop {
+  background: #263238;
+}
+.widget.blue-grey .navbar-default .dropdown-menu a,
+.widget.blue-grey .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.amber.widget_maera_mg_featured .panel,
+.widget.amber.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #ffc107;
+}
+.widget.amber.widget_maera_mg_featured .panel a.btn-primary,
+.widget.amber.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #ffc107;
+}
+.widget.amber ul.nav.nav-pills li.active a {
+  background: #ffc107;
+}
+.widget.amber .navbar-default {
+  background: #ffc107;
+}
+.widget.amber .navbar-default .navbar-nav > li > a {
+  color: #333;
+}
+.widget.amber .navbar-default .navbar-nav > .active > a {
+  background: #ffc516;
+}
+.widget.amber .navbar-default .dropdown-menu,
+.widget.amber .navbar-default .select2-drop {
+  background: #ffc107;
+}
+.widget.amber .navbar-default .dropdown-menu a,
+.widget.amber .navbar-default .select2-drop a {
+  color: #333;
+}
+.widget.orange.widget_maera_mg_featured .panel,
+.widget.orange.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #ff9800;
+}
+.widget.orange.widget_maera_mg_featured .panel a.btn-primary,
+.widget.orange.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #ff9800;
+}
+.widget.orange ul.nav.nav-pills li.active a {
+  background: #ff9800;
+  color: #fff;
+}
+.widget.orange .navbar-default {
+  background: #ff9800;
+}
+.widget.orange .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.orange .navbar-default .navbar-nav > .active > a {
+  background: #ff9e0f;
+}
+.widget.orange .navbar-default .dropdown-menu,
+.widget.orange .navbar-default .select2-drop {
+  background: #ff9800;
+}
+.widget.orange .navbar-default .dropdown-menu a,
+.widget.orange .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.deep-orange.widget_maera_mg_featured .panel,
+.widget.deep-orange.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #ff5722;
+}
+.widget.deep-orange.widget_maera_mg_featured .panel a.btn-primary,
+.widget.deep-orange.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #ff5722;
+}
+.widget.deep-orange ul.nav.nav-pills li.active a {
+  background: #ff5722;
+  color: #fff;
+}
+.widget.deep-orange .navbar-default {
+  background: #ff5722;
+}
+.widget.deep-orange .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.deep-orange .navbar-default .navbar-nav > .active > a {
+  background: #ff6331;
+}
+.widget.deep-orange .navbar-default .dropdown-menu,
+.widget.deep-orange .navbar-default .select2-drop {
+  background: #ff5722;
+}
+.widget.deep-orange .navbar-default .dropdown-menu a,
+.widget.deep-orange .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.yellow.widget_maera_mg_featured .panel,
+.widget.yellow.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #ffeb3b;
+}
+.widget.yellow.widget_maera_mg_featured .panel a.btn-primary,
+.widget.yellow.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #ffeb3b;
+  color: #222;
+}
+.widget.yellow ul.nav.nav-pills li.active a {
+  background: #ffeb3b;
+}
+.widget.yellow .navbar-default {
+  background: #ffeb3b;
+}
+.widget.yellow .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.yellow .navbar-default .navbar-nav > .active > a {
+  background: #ffed4a;
+}
+.widget.yellow .navbar-default .dropdown-menu,
+.widget.yellow .navbar-default .select2-drop {
+  background: #ffeb3b;
+}
+.widget.yellow .navbar-default .dropdown-menu a,
+.widget.yellow .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.red.widget_maera_mg_featured .panel,
+.widget.red.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #f44336;
+}
+.widget.red.widget_maera_mg_featured .panel a.btn-primary,
+.widget.red.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #f44336;
+}
+.widget.red ul.nav.nav-pills li.active a {
+  background: #f44336;
+  color: #fff;
+}
+.widget.red .navbar-default {
+  background: #f44336;
+}
+.widget.red .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.red .navbar-default .navbar-nav > .active > a {
+  background: #f55145;
+}
+.widget.red .navbar-default .dropdown-menu,
+.widget.red .navbar-default .select2-drop {
+  background: #f44336;
+}
+.widget.red .navbar-default .dropdown-menu a,
+.widget.red .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.red-dark.widget_maera_mg_featured .panel,
+.widget.red-dark.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #c62828;
+}
+.widget.red-dark.widget_maera_mg_featured .panel a.btn-primary,
+.widget.red-dark.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #c62828;
+}
+.widget.red-dark ul.nav.nav-pills li.active a {
+  background: #c62828;
+  color: #fff;
+}
+.widget.red-dark .navbar-default {
+  background: #c62828;
+}
+.widget.red-dark .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.red-dark .navbar-default .navbar-nav > .active > a {
+  background: #d32b2b;
+}
+.widget.red-dark .navbar-default .dropdown-menu,
+.widget.red-dark .navbar-default .select2-drop {
+  background: #c62828;
+}
+.widget.red-dark .navbar-default .dropdown-menu a,
+.widget.red-dark .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.almost-white.widget_maera_mg_featured .panel,
+.widget.almost-white.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #fafafa;
+}
+.widget.almost-white.widget_maera_mg_featured .panel a.btn-primary,
+.widget.almost-white.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #fafafa;
+  color: #333;
+}
+.widget.almost-white ul.nav.nav-pills li.active a {
+  background: #fafafa;
+}
+.widget.almost-white .navbar-default {
+  background: #fafafa;
+}
+.widget.almost-white .navbar-default .navbar-nav > li > a {
+  color: #333;
+}
+.widget.almost-white .navbar-default .navbar-nav > .active > a {
+  background: #ffffff;
+}
+.widget.almost-white .navbar-default .dropdown-menu,
+.widget.almost-white .navbar-default .select2-drop {
+  background: #00bcd4;
+}
+.widget.almost-white .navbar-default .dropdown-menu a,
+.widget.almost-white .navbar-default .select2-drop a {
+  color: #333;
+}
+.widget.almost-grey.widget_maera_mg_featured .panel,
+.widget.almost-grey.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #e0e0e0;
+}
+.widget.almost-grey.widget_maera_mg_featured .panel a.btn-primary,
+.widget.almost-grey.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #e0e0e0;
+  color: #333;
+}
+.widget.almost-grey ul.nav.nav-pills li.active a {
+  background: #e0e0e0;
+}
+.widget.almost-grey .navbar-default {
+  background: #e0e0e0;
+}
+.widget.almost-grey .navbar-default .navbar-nav > li > a {
+  color: #333;
+}
+.widget.almost-grey .navbar-default .navbar-nav > .active > a {
+  background: #e8e8e8;
+}
+.widget.almost-grey .navbar-default .dropdown-menu,
+.widget.almost-grey .navbar-default .select2-drop {
+  background: #e0e0e0;
+}
+.widget.almost-grey .navbar-default .dropdown-menu a,
+.widget.almost-grey .navbar-default .select2-drop a {
+  color: #fff;
+}
+.widget.concrete-grey.widget_maera_mg_featured .panel,
+.widget.concrete-grey.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #9e9e9e;
+}
+.widget.concrete-grey.widget_maera_mg_featured .panel a.btn-primary,
+.widget.concrete-grey.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #9e9e9e;
+}
+.widget.concrete-grey ul.nav.nav-pills li.active a {
+  background: #9e9e9e;
+  color: #fff;
+}
+.widget.concrete-grey .navbar-default {
+  background: #9e9e9e;
+}
+.widget.concrete-grey .navbar-default .navbar-nav > li > a {
+  color: #333;
+}
+.widget.concrete-grey .navbar-default .navbar-nav > .active > a {
+  background: #a6a6a6;
+}
+.widget.concrete-grey .navbar-default .dropdown-menu,
+.widget.concrete-grey .navbar-default .select2-drop {
+  background: #9e9e9e;
+}
+.widget.concrete-grey .navbar-default .dropdown-menu a,
+.widget.concrete-grey .navbar-default .select2-drop a {
+  color: #333;
+}
+.widget.asbestos-grey.widget_maera_mg_featured .panel,
+.widget.asbestos-grey.widget_maera_mg_featured .panel.with-heading .panel-heading {
+  border-bottom-color: #757575;
+}
+.widget.asbestos-grey.widget_maera_mg_featured .panel a.btn-primary,
+.widget.asbestos-grey.widget_maera_mg_featured .panel.with-heading .panel-heading a.btn-primary {
+  background: #757575;
+}
+.widget.asbestos-grey ul.nav.nav-pills li a {
+  color: #757575;
+}
+.widget.asbestos-grey ul.nav.nav-pills li.active a {
+  background: #757575;
+  color: #fff;
+}
+.widget.asbestos-grey .navbar-default {
+  background: #757575;
+}
+.widget.asbestos-grey .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.widget.asbestos-grey .navbar-default .navbar-nav > .active > a {
+  background: #7d7d7d;
+}
+.widget.asbestos-grey .navbar-default .dropdown-menu,
+.widget.asbestos-grey .navbar-default .select2-drop {
+  background: #757575;
+}
+.widget.asbestos-grey .navbar-default .dropdown-menu a,
+.widget.asbestos-grey .navbar-default .select2-drop a {
+  color: #fff;
+}
 body .content-primary-wrapper.main .container {
   padding-top: 20px;
   background: #fff;
@@ -13768,44 +14368,6 @@ img {
 .module.single h3 {
   margin-top: 0;
 }
-.palette-cyan,
-.palette-teal,
-.palette-green,
-.palette-dark-green,
-.palette-blue,
-.palette-indigo,
-.palette-pink,
-.palette-purple,
-.palette-brown,
-.palette-blue-grey,
-.palette-amber,
-.palette-orange,
-.palette-deep-orange,
-.palette-yellow,
-.palette-red,
-.palette-red-dark,
-.palette-asbestos-grey {
-  color: #fff;
-}
-.palette-cyan a,
-.palette-teal a,
-.palette-green a,
-.palette-dark-green a,
-.palette-blue a,
-.palette-indigo a,
-.palette-pink a,
-.palette-purple a,
-.palette-brown a,
-.palette-blue-grey a,
-.palette-amber a,
-.palette-orange a,
-.palette-deep-orange a,
-.palette-yellow a,
-.palette-red a,
-.palette-red-dark a,
-.palette-asbestos-grey a {
-  color: #fff;
-}
 .global.header {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -13819,4 +14381,633 @@ img {
 }
 .widget .navbar {
   margin-bottom: 0;
+}
+textarea#comment {
+  display: block;
+  width: 100%;
+  height: 41px;
+  padding: 6px 12px;
+  font-size: 18px;
+  line-height: 1.72222;
+  color: #9e9e9e;
+  background-color: white;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  border: 2px solid #e0e0e0;
+  color: #263238;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.467;
+  padding: 8px 12px;
+  height: 42px;
+  border-radius: 5px;
+  box-shadow: none;
+  transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+  min-height: 9em;
+}
+textarea#comment:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-group.focus textarea#comment,
+textarea#comment:focus {
+  border-color: #00bcd4;
+  outline: 0;
+  box-shadow: none;
+}
+textarea#comment::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+textarea#comment:-ms-input-placeholder {
+  color: #999999;
+}
+textarea#comment::-webkit-input-placeholder {
+  color: #999999;
+}
+textarea#comment::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+textarea#comment:-ms-input-placeholder {
+  color: #999999;
+}
+textarea#comment::-webkit-input-placeholder {
+  color: #999999;
+}
+textarea#comment[disabled],
+textarea#comment[readonly],
+fieldset[disabled] textarea#comment {
+  cursor: not-allowed;
+  background-color: #f5f5f5;
+  opacity: 1;
+}
+textareatextarea#comment {
+  height: auto;
+}
+textarea#comment::-moz-placeholder {
+  color: #9ea3a6;
+  opacity: 1;
+}
+textarea#comment:-ms-input-placeholder {
+  color: #9ea3a6;
+}
+textarea#comment::-webkit-input-placeholder {
+  color: #9ea3a6;
+}
+textarea#comment::-moz-placeholder {
+  color: #9ea3a6;
+  opacity: 1;
+}
+textarea#comment:-ms-input-placeholder {
+  color: #9ea3a6;
+}
+textarea#comment::-webkit-input-placeholder {
+  color: #9ea3a6;
+}
+textarea#comment:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-group.focus textarea#comment,
+textarea#comment:focus {
+  border-color: #00bcd4;
+  outline: 0;
+  box-shadow: none;
+}
+textarea#comment[disabled],
+textarea#comment[readonly],
+fieldset[disabled] textarea#comment {
+  background-color: #f5f5f5;
+  border-color: #d8d8d8;
+  color: #d8d8d8;
+  cursor: default;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+textarea#comment.flat {
+  border-color: transparent;
+}
+textarea#comment.flat:hover {
+  border-color: #e0e0e0;
+}
+textarea#comment.flat:focus {
+  border-color: #00bcd4;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]::-webkit-file-upload-button,
+button {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 18px;
+  line-height: 1.72222;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4;
+  border-radius: 3px;
+  padding: 10px 15px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+  color: #ffffff;
+  background-color: #263238;
+  border-color: #1c2429;
+  color: white;
+  background-color: #00bcd4;
+}
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="file"]::-webkit-file-upload-button:focus,
+button:focus,
+input[type="button"]:active:focus,
+input[type="submit"]:active:focus,
+input[type="reset"]:active:focus,
+input[type="file"]::-webkit-file-upload-button:active:focus,
+button:active:focus,
+input[type="button"].active:focus,
+input[type="submit"].active:focus,
+input[type="reset"].active:focus,
+input[type="file"]::-webkit-file-upload-button.active:focus,
+button.active:focus,
+input[type="button"].focus,
+input[type="submit"].focus,
+input[type="reset"].focus,
+input[type="file"]::-webkit-file-upload-button.focus,
+button.focus,
+input[type="button"]:active.focus,
+input[type="submit"]:active.focus,
+input[type="reset"]:active.focus,
+input[type="file"]::-webkit-file-upload-button:active.focus,
+button:active.focus,
+input[type="button"].active.focus,
+input[type="submit"].active.focus,
+input[type="reset"].active.focus,
+input[type="file"]::-webkit-file-upload-button.active.focus,
+button.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="file"]::-webkit-file-upload-button:hover,
+button:hover,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="file"]::-webkit-file-upload-button:focus,
+button:focus,
+input[type="button"].focus,
+input[type="submit"].focus,
+input[type="reset"].focus,
+input[type="file"]::-webkit-file-upload-button.focus,
+button.focus {
+  color: white;
+  text-decoration: none;
+}
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="file"]::-webkit-file-upload-button:active,
+button:active,
+input[type="button"].active,
+input[type="submit"].active,
+input[type="reset"].active,
+input[type="file"]::-webkit-file-upload-button.active,
+button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+input[type="button"].disabled,
+input[type="submit"].disabled,
+input[type="reset"].disabled,
+input[type="file"]::-webkit-file-upload-button.disabled,
+button.disabled,
+input[type="button"][disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="file"]::-webkit-file-upload-button[disabled],
+button[disabled],
+fieldset[disabled] input[type="button"],
+fieldset[disabled] input[type="submit"],
+fieldset[disabled] input[type="reset"],
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button,
+fieldset[disabled] button {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="file"]::-webkit-file-upload-button:hover,
+button:hover,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="file"]::-webkit-file-upload-button:focus,
+button:focus {
+  outline: none;
+  color: white;
+}
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="file"]::-webkit-file-upload-button:active,
+button:active,
+input[type="button"].active,
+input[type="submit"].active,
+input[type="reset"].active,
+input[type="file"]::-webkit-file-upload-button.active,
+button.active {
+  outline: none;
+  box-shadow: none;
+}
+input[type="button"]:focus:active,
+input[type="submit"]:focus:active,
+input[type="reset"]:focus:active,
+input[type="file"]::-webkit-file-upload-button:focus:active,
+button:focus:active {
+  outline: none;
+}
+input[type="button"].disabled,
+input[type="submit"].disabled,
+input[type="reset"].disabled,
+input[type="file"]::-webkit-file-upload-button.disabled,
+button.disabled,
+input[type="button"][disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="file"]::-webkit-file-upload-button[disabled],
+button[disabled],
+fieldset[disabled] input[type="button"],
+fieldset[disabled] input[type="submit"],
+fieldset[disabled] input[type="reset"],
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button,
+fieldset[disabled] button {
+  background-color: #e0e0e0;
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  cursor: not-allowed;
+}
+input[type="button"] [class^="fui-"],
+input[type="submit"] [class^="fui-"],
+input[type="reset"] [class^="fui-"],
+input[type="file"]::-webkit-file-upload-button [class^="fui-"],
+button [class^="fui-"] {
+  margin: 0 1px;
+  position: relative;
+  line-height: 1;
+  top: 1px;
+}
+.btn-xsinput[type="button"] [class^="fui-"],
+.btn-xsinput[type="submit"] [class^="fui-"],
+.btn-xsinput[type="reset"] [class^="fui-"],
+.btn-xsinput[type="file"]::-webkit-file-upload-button [class^="fui-"],
+.btn-xsbutton [class^="fui-"] {
+  font-size: 11px;
+  top: 0;
+}
+.btn-hginput[type="button"] [class^="fui-"],
+.btn-hginput[type="submit"] [class^="fui-"],
+.btn-hginput[type="reset"] [class^="fui-"],
+.btn-hginput[type="file"]::-webkit-file-upload-button [class^="fui-"],
+.btn-hgbutton [class^="fui-"] {
+  top: 2px;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="file"]::-webkit-file-upload-button:hover,
+button:hover,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="file"]::-webkit-file-upload-button:focus,
+button:focus,
+input[type="button"].focus,
+input[type="submit"].focus,
+input[type="reset"].focus,
+input[type="file"]::-webkit-file-upload-button.focus,
+button.focus,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="file"]::-webkit-file-upload-button:active,
+button:active,
+input[type="button"].active,
+input[type="submit"].active,
+input[type="reset"].active,
+input[type="file"]::-webkit-file-upload-button.active,
+button.active,
+.open > .dropdown-toggleinput[type="button"],
+.open > .dropdown-toggleinput[type="submit"],
+.open > .dropdown-toggleinput[type="reset"],
+.open > .dropdown-toggleinput[type="file"]::-webkit-file-upload-button,
+.open > .dropdown-togglebutton {
+  color: #ffffff;
+  background-color: #11171a;
+  border-color: #030404;
+}
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="file"]::-webkit-file-upload-button:active,
+button:active,
+input[type="button"].active,
+input[type="submit"].active,
+input[type="reset"].active,
+input[type="file"]::-webkit-file-upload-button.active,
+button.active,
+.open > .dropdown-toggleinput[type="button"],
+.open > .dropdown-toggleinput[type="submit"],
+.open > .dropdown-toggleinput[type="reset"],
+.open > .dropdown-toggleinput[type="file"]::-webkit-file-upload-button,
+.open > .dropdown-togglebutton {
+  background-image: none;
+}
+input[type="button"].disabled,
+input[type="submit"].disabled,
+input[type="reset"].disabled,
+input[type="file"]::-webkit-file-upload-button.disabled,
+button.disabled,
+input[type="button"][disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="file"]::-webkit-file-upload-button[disabled],
+button[disabled],
+fieldset[disabled] input[type="button"],
+fieldset[disabled] input[type="submit"],
+fieldset[disabled] input[type="reset"],
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button,
+fieldset[disabled] button,
+input[type="button"].disabled:hover,
+input[type="submit"].disabled:hover,
+input[type="reset"].disabled:hover,
+input[type="file"]::-webkit-file-upload-button.disabled:hover,
+button.disabled:hover,
+input[type="button"][disabled]:hover,
+input[type="submit"][disabled]:hover,
+input[type="reset"][disabled]:hover,
+input[type="file"]::-webkit-file-upload-button[disabled]:hover,
+button[disabled]:hover,
+fieldset[disabled] input[type="button"]:hover,
+fieldset[disabled] input[type="submit"]:hover,
+fieldset[disabled] input[type="reset"]:hover,
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button:hover,
+fieldset[disabled] button:hover,
+input[type="button"].disabled:focus,
+input[type="submit"].disabled:focus,
+input[type="reset"].disabled:focus,
+input[type="file"]::-webkit-file-upload-button.disabled:focus,
+button.disabled:focus,
+input[type="button"][disabled]:focus,
+input[type="submit"][disabled]:focus,
+input[type="reset"][disabled]:focus,
+input[type="file"]::-webkit-file-upload-button[disabled]:focus,
+button[disabled]:focus,
+fieldset[disabled] input[type="button"]:focus,
+fieldset[disabled] input[type="submit"]:focus,
+fieldset[disabled] input[type="reset"]:focus,
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button:focus,
+fieldset[disabled] button:focus,
+input[type="button"].disabled.focus,
+input[type="submit"].disabled.focus,
+input[type="reset"].disabled.focus,
+input[type="file"]::-webkit-file-upload-button.disabled.focus,
+button.disabled.focus,
+input[type="button"][disabled].focus,
+input[type="submit"][disabled].focus,
+input[type="reset"][disabled].focus,
+input[type="file"]::-webkit-file-upload-button[disabled].focus,
+button[disabled].focus,
+fieldset[disabled] input[type="button"].focus,
+fieldset[disabled] input[type="submit"].focus,
+fieldset[disabled] input[type="reset"].focus,
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button.focus,
+fieldset[disabled] button.focus,
+input[type="button"].disabled:active,
+input[type="submit"].disabled:active,
+input[type="reset"].disabled:active,
+input[type="file"]::-webkit-file-upload-button.disabled:active,
+button.disabled:active,
+input[type="button"][disabled]:active,
+input[type="submit"][disabled]:active,
+input[type="reset"][disabled]:active,
+input[type="file"]::-webkit-file-upload-button[disabled]:active,
+button[disabled]:active,
+fieldset[disabled] input[type="button"]:active,
+fieldset[disabled] input[type="submit"]:active,
+fieldset[disabled] input[type="reset"]:active,
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button:active,
+fieldset[disabled] button:active,
+input[type="button"].disabled.active,
+input[type="submit"].disabled.active,
+input[type="reset"].disabled.active,
+input[type="file"]::-webkit-file-upload-button.disabled.active,
+button.disabled.active,
+input[type="button"][disabled].active,
+input[type="submit"][disabled].active,
+input[type="reset"][disabled].active,
+input[type="file"]::-webkit-file-upload-button[disabled].active,
+button[disabled].active,
+fieldset[disabled] input[type="button"].active,
+fieldset[disabled] input[type="submit"].active,
+fieldset[disabled] input[type="reset"].active,
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button.active,
+fieldset[disabled] button.active {
+  background-color: #263238;
+  border-color: #1c2429;
+}
+input[type="button"] .badge,
+input[type="submit"] .badge,
+input[type="reset"] .badge,
+input[type="file"]::-webkit-file-upload-button .badge,
+button .badge {
+  color: #263238;
+  background-color: #ffffff;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="file"]::-webkit-file-upload-button:hover,
+button:hover,
+input[type="button"].hover,
+input[type="submit"].hover,
+input[type="reset"].hover,
+input[type="file"]::-webkit-file-upload-button.hover,
+button.hover,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="file"]::-webkit-file-upload-button:focus,
+button:focus,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="file"]::-webkit-file-upload-button:active,
+button:active,
+input[type="button"].active,
+input[type="submit"].active,
+input[type="reset"].active,
+input[type="file"]::-webkit-file-upload-button.active,
+button.active,
+.open > .dropdown-toggleinput[type="button"],
+.open > .dropdown-toggleinput[type="submit"],
+.open > .dropdown-toggleinput[type="reset"],
+.open > .dropdown-toggleinput[type="file"]::-webkit-file-upload-button,
+.open > .dropdown-togglebutton {
+  color: white;
+  background-color: #33c9dd;
+  border-color: #33c9dd;
+}
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="file"]::-webkit-file-upload-button:active,
+button:active,
+input[type="button"].active,
+input[type="submit"].active,
+input[type="reset"].active,
+input[type="file"]::-webkit-file-upload-button.active,
+button.active,
+.open > .dropdown-toggleinput[type="button"],
+.open > .dropdown-toggleinput[type="submit"],
+.open > .dropdown-toggleinput[type="reset"],
+.open > .dropdown-toggleinput[type="file"]::-webkit-file-upload-button,
+.open > .dropdown-togglebutton {
+  background: #00a0b4;
+  border-color: #00a0b4;
+}
+input[type="button"].disabled,
+input[type="submit"].disabled,
+input[type="reset"].disabled,
+input[type="file"]::-webkit-file-upload-button.disabled,
+button.disabled,
+input[type="button"][disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="file"]::-webkit-file-upload-button[disabled],
+button[disabled],
+fieldset[disabled] input[type="button"],
+fieldset[disabled] input[type="submit"],
+fieldset[disabled] input[type="reset"],
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button,
+fieldset[disabled] button,
+input[type="button"].disabled:hover,
+input[type="submit"].disabled:hover,
+input[type="reset"].disabled:hover,
+input[type="file"]::-webkit-file-upload-button.disabled:hover,
+button.disabled:hover,
+input[type="button"][disabled]:hover,
+input[type="submit"][disabled]:hover,
+input[type="reset"][disabled]:hover,
+input[type="file"]::-webkit-file-upload-button[disabled]:hover,
+button[disabled]:hover,
+fieldset[disabled] input[type="button"]:hover,
+fieldset[disabled] input[type="submit"]:hover,
+fieldset[disabled] input[type="reset"]:hover,
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button:hover,
+fieldset[disabled] button:hover,
+input[type="button"].disabled.hover,
+input[type="submit"].disabled.hover,
+input[type="reset"].disabled.hover,
+input[type="file"]::-webkit-file-upload-button.disabled.hover,
+button.disabled.hover,
+input[type="button"][disabled].hover,
+input[type="submit"][disabled].hover,
+input[type="reset"][disabled].hover,
+input[type="file"]::-webkit-file-upload-button[disabled].hover,
+button[disabled].hover,
+fieldset[disabled] input[type="button"].hover,
+fieldset[disabled] input[type="submit"].hover,
+fieldset[disabled] input[type="reset"].hover,
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button.hover,
+fieldset[disabled] button.hover,
+input[type="button"].disabled:focus,
+input[type="submit"].disabled:focus,
+input[type="reset"].disabled:focus,
+input[type="file"]::-webkit-file-upload-button.disabled:focus,
+button.disabled:focus,
+input[type="button"][disabled]:focus,
+input[type="submit"][disabled]:focus,
+input[type="reset"][disabled]:focus,
+input[type="file"]::-webkit-file-upload-button[disabled]:focus,
+button[disabled]:focus,
+fieldset[disabled] input[type="button"]:focus,
+fieldset[disabled] input[type="submit"]:focus,
+fieldset[disabled] input[type="reset"]:focus,
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button:focus,
+fieldset[disabled] button:focus,
+input[type="button"].disabled:active,
+input[type="submit"].disabled:active,
+input[type="reset"].disabled:active,
+input[type="file"]::-webkit-file-upload-button.disabled:active,
+button.disabled:active,
+input[type="button"][disabled]:active,
+input[type="submit"][disabled]:active,
+input[type="reset"][disabled]:active,
+input[type="file"]::-webkit-file-upload-button[disabled]:active,
+button[disabled]:active,
+fieldset[disabled] input[type="button"]:active,
+fieldset[disabled] input[type="submit"]:active,
+fieldset[disabled] input[type="reset"]:active,
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button:active,
+fieldset[disabled] button:active,
+input[type="button"].disabled.active,
+input[type="submit"].disabled.active,
+input[type="reset"].disabled.active,
+input[type="file"]::-webkit-file-upload-button.disabled.active,
+button.disabled.active,
+input[type="button"][disabled].active,
+input[type="submit"][disabled].active,
+input[type="reset"][disabled].active,
+input[type="file"]::-webkit-file-upload-button[disabled].active,
+button[disabled].active,
+fieldset[disabled] input[type="button"].active,
+fieldset[disabled] input[type="submit"].active,
+fieldset[disabled] input[type="reset"].active,
+fieldset[disabled] input[type="file"]::-webkit-file-upload-button.active,
+fieldset[disabled] button.active {
+  background-color: #e0e0e0;
+  border-color: #00bcd4;
+}
+input[type="button"] .badge,
+input[type="submit"] .badge,
+input[type="reset"] .badge,
+input[type="file"]::-webkit-file-upload-button .badge,
+button .badge {
+  color: #00bcd4;
+  background-color: white;
 }

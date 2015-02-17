@@ -1,21 +1,27 @@
-{#<?php#}
-{% import 'grid_classes.html.twig' as grid %}
-
-<div class="{{ grid.container() }} wrap main-section" id="wrap-main-section">
+{% do action( 'maera/wrap/before', post.ID ) %}
+<div class="wrap main-section" id="wrap-main-section">
 	{% do action( 'maera/content/before', post.ID ) %}
-	{% if sidebar.pre_main %}<div class="row">{{ sidebar.pre_main }}</div>{% endif %}
 	<div class="content" id="content" itemprop="mainContentOfPage">
-		<div class="{{ grid.row() }} bg">
-			<div class="content-primary-wrapper {{ 'main'|apply_filters( 'maera/section_class/wrapper' ) }}">
-				{% do action( 'maera/main/before', post.ID ) %}
-				{% block main %}{{ __( 'Sorry, no content', 'maera' ) }}{% endblock %}
-				{% do action( 'maera/main/after', post.ID ) %}
-				{% include 'sidebar-primary.twig' %}
+		<div class="content-primary-wrapper {{ 'main'|apply_filters( 'maera/section_class/wrapper' ) }}">
+			<div class="[maera_grid_container_class]">
+				<div class="[maera_grid_row_class] pre-main">{{ sidebar.pre_main_top }}</div>
+				<div class="[maera_grid_row_class] main-content-table">
+					<main class="[maera_grid_col_8] {{ 'main'|apply_filters( 'maera/section_class/content' ) }} inside" role="main">
+						<div class="[maera_grid_row_class]">
+							{{ sidebar.main_top }}
+							<div class="clearfix"></div>
+							{% do action( 'maera/main/before', post.ID ) %}
+							{% block main %}{{ __( 'Sorry, no content', 'maera' ) }}{% endblock %}
+							{% do action( 'maera/main/after', post.ID ) %}
+							<div class="clearfix"></div>
+							{{ sidebar.main_bottom }}
+						</div>
+					</main><!-- /.main -->
+					{% include 'sidebar.twig'|apply_filters('maera/sidebar_template') %}
+				</div>
 			</div>
-			{% include 'sidebar-secondary.twig' %}
-			<div class="clearfix"></div>
 		</div>
+		<div class="clearfix"></div>
 	</div><!-- /#content -->
 	{% do action( 'maera/content/after' ) %}
-	{% if sidebar.post_main %}<div class="row">{{ sidebar.post_main }}</div>{% endif %}
 </div>

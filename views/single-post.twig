@@ -1,28 +1,36 @@
+{% extends "main.twig" %}
+{% block content %}
+
 {% set parts_serialized = theme.theme_mod('single_post_parts', '') %}
 {% set parts = function('unserialize', parts_serialized) %}
 
-{% for part in parts %}
+<div class="content-wrapper col-md-12">
+	{% for part in parts %}
 
-	{% if part == 'title' %}
-		<title itemprop="name">{{ post.title }}</title>
-		<h1 class="entry-title">{{ post.title|apply_filters( 'maera/title' ) }}</h1>
-	{% endif %}
+		{% if part == 'title' %}
+			<title itemprop="name">{{ post.title }}</title>
+			<h1 class="entry-title">{{ post.title|apply_filters( 'maera/title' ) }}</h1>
+		{% endif %}
 
-	{% if part == 'image' %}
-		<img class="featured-image" src="{{ post.thumbnail.src }}">
-	{% endif %}
+		{% if part == 'image' %}
+			<img class="featured-image" src="{{ post.thumbnail.src }}">
+		{% endif %}
 
-	{% if part == 'content' %}
-		{{ post.content }}
-	{% endif %}
+		{% if part == 'content' %}
+			{{ post.content }}
+		{% endif %}
 
-	{% if part == 'meta' %}
-		{% include 'content-single-entry-meta.twig' %}
-	{% endif %}
+		{% if part == 'meta' %}
+			{% include 'content-single-entry-meta.twig' %}
+		{% endif %}
 
-	<!-- {% if part == 'author' %}author{% endif %} -->
+		<!-- {% if part == 'author' %}author{% endif %} -->
 
-	{% if part == 'comments' %}
-		{% include 'comments.twig' %}
-	{% endif %}
-{% endfor %}
+		{% if part == 'comments' %}
+			{% if function('comments_open') or function('get_comments_number', post.ID) > 0 %}
+				{{ function('comments_template') }}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+</div>
+{% endblock %}

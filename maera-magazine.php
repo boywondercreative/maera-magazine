@@ -57,15 +57,15 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
             }
 
             // Require any additional files
-            require_once( __DIR__ . '/includes/class-Maera_MG_Customizer.php');
-            require_once( __DIR__ . '/includes/class-Maera_MG_Enqueue.php');
-            require_once( __DIR__ . '/includes/class-Maera_MG_Style.php');
-            require_once( __DIR__ . '/includes/class-Maera_MG_Widget_Areas.php');
-            require_once( __DIR__ . '/includes/class-Maera_MG_Featured_Widget.php');
-            require_once( __DIR__ . '/includes/class-Maera_MG_Timber.php');
-			require_once( __DIR__ . '/includes/class-Maera_MG_Widget_Classes.php' );
-            require_once( __DIR__ . '/includes/class-Maera_MG_Custom_Menu_Widget.php' );
-            require_once( __DIR__ . '/includes/class-Maera_MG_Scripts.php' );
+            require_once( __DIR__ . '/includes/class-maera-mg-customizer.php');
+            require_once( __DIR__ . '/includes/class-maera-mg-enqueue.php');
+            require_once( __DIR__ . '/includes/class-maera-mg-style.php');
+            require_once( __DIR__ . '/includes/class-maera-mg-widget-areas.php');
+            require_once( __DIR__ . '/includes/class-maera-mg-featured-widget.php');
+            require_once( __DIR__ . '/includes/class-maera-mg-timber.php');
+			require_once( __DIR__ . '/includes/class-maera-mg-widget-classes.php' );
+            require_once( __DIR__ . '/includes/class-maera-mg-custom-menu-widget.php' );
+            require_once( __DIR__ . '/includes/class-maera-mg-scripts.php' );
 
             $this->customizer     = new Maera_MG_Customizer();
             $this->enqueue        = new Maera_MG_Enqueue();

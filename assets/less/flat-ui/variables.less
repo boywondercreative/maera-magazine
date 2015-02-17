@@ -8,48 +8,39 @@
 //##
 
 // Color swatches
-@turquoise:                 #1abc9c;
-@green-sea:                 #16a085;
-
-@emerald:                   #2ecc71;
-@nephritis:                 #27ae60;
-
-@peter-river:               #3498db;
-@belize-hole:               #2980b9;
-
-@amethyst:                  #9b59b6;
-@wisteria:                  #8e44ad;
-
-@wet-asphalt:               #34495e;
-@midnight-blue:             #2c3e50;
-
-@sun-flower:                #f1c40f;
-@orange:                    #f39c12;
-
-@carrot:                    #e67e22;
-@pumpkin:                   #d35400;
-
-@alizarin:                  #e74c3c;
-@pomegranate:               #c0392b;
-
-@clouds:                    #ecf0f1;
-@silver:                    #bdc3c7;
-
-@concrete:                  #95a5a6;
-@asbestos:                  #7f8c8d;
+@cyan:                      #00bcd4;
+@teal:                      #009688;
+@green:                     #4caf50;
+@dark-green:                #2e7d32;
+@blue:                      #2196f3;
+@indigo:                    #3f51b5;
+@pink:                      #e91e63;
+@purple:                    #9c27b0;
+@brown:                     #4e342e;
+@blue-grey:                 #263238;
+@amber:                     #ffc107;
+@orange:                    #ff9800;
+@deep-orange:               #ff5722;
+@yellow:                    #ffeb3b;
+@red:                       #f44336;
+@red-dark:                  #c62828;
+@almost-white:              #fafafa;
+@almost-grey:               #e0e0e0;
+@concrete-grey:             #9e9e9e;
+@asbestos-grey:             #757575;
 
 // Grays
-@gray:                      @concrete;
-@gray-light:                @silver;
+@gray:                      @concrete-grey;
+@gray-light:                @almost-grey;
 @inverse:                   white;
 
 // Brand colors
-@brand-primary:             @wet-asphalt;
-@brand-secondary:           @turquoise;
-@brand-success:             @emerald;
-@brand-warning:             @sun-flower;
-@brand-danger:              @alizarin;
-@brand-info:                @peter-river;
+@brand-primary:             @blue-grey;
+@brand-secondary:           @cyan;
+@brand-success:             @green;
+@brand-warning:             @amber;
+@brand-danger:              @red;
+@brand-info:                @blue;
 
 // Social colors
 @social-pinterest:          #cb2028;
@@ -65,11 +56,11 @@
 //## Settings for some of the most global styles.
 
 @body-bg:                   #fff;
-@text-color:                @brand-primary;
+@text-color:                #222;
 
 //** Global textual link color.
-@link-color:                @green-sea;
-@link-hover-color:          @turquoise;
+@link-color:                darken(@cyan, 3%);
+@link-hover-color:          @cyan;
 //** Link hover decoration.
 @link-hover-decoration:     none;
 
@@ -121,9 +112,9 @@
 @component-font-size-base:  ceil((@font-size-base * 0.833)); // ~15px
 
 // Border-radius
-@border-radius-base:        4px;
-@border-radius-large:       6px;
-@border-radius-small:       3px;
+@border-radius-base:        3px;
+@border-radius-large:       5px;
+@border-radius-small:       2px;
 
 //** Width of the `border` for generating carets that indicator dropdowns.
 @caret-width-base:          6px;
@@ -386,12 +377,12 @@
 
 // Inverted navbar
 // Reset inverted navbar basics
-@navbar-inverse-divider:              darken(@brand-primary, 3%);
+@navbar-inverse-divider:              #020202;
 
 // Reset inverted navbar basics
 @navbar-inverse-color:                @inverse;
-@navbar-inverse-bg:                   @brand-primary;
-@navbar-inverse-border:               darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-bg:                   #000;
+@navbar-inverse-border:               lighten(@navbar-inverse-bg, 50%);
 
 // Inverted navbar links
 @navbar-inverse-link-color:           @inverse;
@@ -532,7 +523,7 @@
 @vplayer-fullscreen-zindex:           10000;
 
 @vplayer-control-bar-color:           @inverse;
-@vplayer-control-bar-bg:              @midnight-blue;
+@vplayer-control-bar-bg:              @blue-grey;
 
 @vplayer-preloader-primary-bg:        #e74c3c;
 @vplayer-preloader-secondary-bg:      #ebedee;
@@ -542,8 +533,8 @@
 @vplaver-play-control-color:          @brand-secondary;
 @vplaver-play-control-hover-color:    mix(@brand-secondary, black, 85%);
 
-@vplaver-second-controls-color:       desaturate(lighten(@midnight-blue, 12%), 6%);
-@vplaver-second-controls-hover-color: desaturate(lighten(@midnight-blue, 20%), 6%);
+@vplaver-second-controls-color:       desaturate(lighten(@blue-grey, 12%), 6%);
+@vplaver-second-controls-hover-color: desaturate(lighten(@blue-grey, 20%), 6%);
 
 @vplaver-progress-bg:                 mix(@brand-primary, @inverse, 93%);
 @vplaver-play-progress-bg:            @brand-secondary;

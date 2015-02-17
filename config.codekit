@@ -1495,15 +1495,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/assets\/less\/css\/menus.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/less\/css\/menus.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/assets\/less\/flat-ui\/flat-ui.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -2750,7 +2741,7 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/less\/parts\/menus.less",
 		"outputAbbreviatedPath": "\/assets\/less\/css\/menus.css",
@@ -2784,83 +2775,83 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/includes\/class-Maera_MG_Custom_Menu_Widget.php": {
+	"\/includes\/class-maera-mg-custom-menu-widget.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/class-Maera_MG_Custom_Menu_Widget.php",
+		"inputAbbreviatedPath": "\/includes\/class-maera-mg-custom-menu-widget.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/class-Maera_MG_Customizer.php": {
+	"\/includes\/class-maera-mg-customizer.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/class-Maera_MG_Customizer.php",
+		"inputAbbreviatedPath": "\/includes\/class-maera-mg-customizer.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/class-Maera_MG_Enqueue.php": {
+	"\/includes\/class-maera-mg-enqueue.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/class-Maera_MG_Enqueue.php",
+		"inputAbbreviatedPath": "\/includes\/class-maera-mg-enqueue.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/class-Maera_MG_Featured_Widget.php": {
+	"\/includes\/class-maera-mg-featured-widget.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/class-Maera_MG_Featured_Widget.php",
+		"inputAbbreviatedPath": "\/includes\/class-maera-mg-featured-widget.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/class-Maera_MG_Scripts.php": {
+	"\/includes\/class-maera-mg-scripts.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/class-Maera_MG_Scripts.php",
+		"inputAbbreviatedPath": "\/includes\/class-maera-mg-scripts.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/class-Maera_MG_Style.php": {
+	"\/includes\/class-maera-mg-style.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/class-Maera_MG_Style.php",
+		"inputAbbreviatedPath": "\/includes\/class-maera-mg-style.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/class-Maera_MG_Timber.php": {
+	"\/includes\/class-maera-mg-timber.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/class-Maera_MG_Timber.php",
+		"inputAbbreviatedPath": "\/includes\/class-maera-mg-timber.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/class-Maera_MG_Widget_Areas.php": {
+	"\/includes\/class-maera-mg-widget-areas.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/class-Maera_MG_Widget_Areas.php",
+		"inputAbbreviatedPath": "\/includes\/class-maera-mg-widget-areas.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/class-Maera_MG_Widget_Classes.php": {
+	"\/includes\/class-maera-mg-widget-classes.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/class-Maera_MG_Widget_Classes.php",
+		"inputAbbreviatedPath": "\/includes\/class-maera-mg-widget-classes.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

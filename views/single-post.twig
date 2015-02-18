@@ -24,7 +24,9 @@
 			{% include 'content-single-entry-meta.twig' %}
 		{% endif %}
 
-		<!-- {% if part == 'author' %}author{% endif %} -->
+		{% if part == 'author' %}
+			{% include 'author_bio.twig' %}
+		{% endif %}
 
 		{% if part == 'comments' %}
 			{% if function('comments_open') or function('get_comments_number', post.ID) > 0 %}

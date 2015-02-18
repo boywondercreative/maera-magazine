@@ -1,0 +1,15 @@
+<div class="well well-lg author-box">
+	<div class="media">
+		<div class="media-left avatar">
+			<a href="{{ post.get_author.get_link }}">
+				{{ function('get_avatar', post.get_author.id, 96) }}
+			</a>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+				<a href="{{ post.get_author.get_link }}">{{ post.get_author.name }}</a>
+			</h4>
+			{{ post.get_author.description }}
+		</div>
+	</div>
+</div>

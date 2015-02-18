@@ -15050,3 +15050,6 @@ button .badge {
     width: 336px;
   }
 }
+.author-box .avatar {
+  width: 106px;
+}

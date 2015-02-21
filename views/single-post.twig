@@ -28,6 +28,14 @@
 			{% include 'author_bio.twig' %}
 		{% endif %}
 
+		{% if part == 'in_post_ad_1' %}
+			{{ sidebar.in_post_ad_1 }}
+		{% endif %}
+
+		{% if part == 'in_post_ad_2' %}
+			{{ sidebar.in_post_ad_2 }}
+		{% endif %}
+
 		{% if part == 'comments' %}
 			{% if function('comments_open') or function('get_comments_number', post.ID) > 0 %}
 				{{ function('comments_template') }}

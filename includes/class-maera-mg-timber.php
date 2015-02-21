@@ -17,6 +17,8 @@ class Maera_MG_Timber {
 		$data['sidebar']['pre_main_top'] = Timber::get_widgets( 'pre_main_top' );
 		$data['sidebar']['main_top'] = Timber::get_widgets( 'main_top' );
 		$data['sidebar']['main_bottom'] = Timber::get_widgets( 'main_bottom' );
+		$data['sidebar']['in_post_ad_1'] = Timber::get_widgets( 'in_post_ad_1' );
+		$data['sidebar']['in_post_ad_2'] = Timber::get_widgets( 'in_post_ad_2' );
 
 		return $data;
 

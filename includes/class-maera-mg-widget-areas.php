@@ -66,6 +66,25 @@ class Maera_MG_Widget_Areas {
 			'after_title'   => $after_title,
 		) );
 
+		register_sidebar( array(
+			'name'          => 'in-post ads 1',
+			'id'            => 'in_post_ad_1',
+			'before_widget' => apply_filters( 'maera/widgets/before', '<section id="%1$s" class="' . $class . ' widget %2$s">' ),
+			'after_widget'  => apply_filters( 'maera/widgets/after', '</section>' ),
+			'before_title'  => $before_title,
+			'after_title'   => $after_title,
+		) );
+
+		register_sidebar( array(
+			'name'          => 'in-post ads 2',
+			'id'            => 'in_post_ad_2',
+			'before_widget' => apply_filters( 'maera/widgets/before', '<section id="%1$s" class="' . $class . ' widget %2$s">' ),
+			'after_widget'  => apply_filters( 'maera/widgets/after', '</section>' ),
+			'before_title'  => $before_title,
+			'after_title'   => $after_title,
+		) );
+
+
 	}
 
 }

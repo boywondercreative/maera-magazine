@@ -637,4 +637,35 @@
 			}
 		}
 	}
+	&.black {
+		&.widget_maera_mg_featured {
+			.panel, .panel.with-heading .panel-heading {
+				border-bottom-color: @black;
+				a.btn-primary {
+					background: @black;
+				}
+			}
+		}
+
+		ul.nav.nav-pills {
+			li {
+				a { color: @black; }
+				&.active {
+					a {
+						background: @black;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			background: @black;
+			.navbar-nav > li > a { color: #fff; }
+			.navbar-nav > .active > a { background: lighten(@black, 3%); }
+			.dropdown-menu, .select2-drop {
+				background: @black;
+				a { color: #fff; }
+			}
+		}
+	}
 }

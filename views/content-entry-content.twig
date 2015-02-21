@@ -1,0 +1,14 @@
+<div class="entry-content" itemprop="description">
+	{% if post.thumbnail %}
+		<a class="featured-image" href="{{ post.link }}" title="{{ post.title }}">
+			<img class="alignleft featured-image width-300" src="{{ post.thumbnail.src|resize(600,370) }}">
+		</a>
+	{% endif %}
+
+	{% if teaser_mode == 'full' %}
+		{{ post.content }}
+	{% else %}
+		{{ post.get_preview }}
+	{% endif %}
+	<div class="clearfix"></div>
+</div>

@@ -15,14 +15,20 @@ class Maera_MG_Widget_Classes {
 				'id'      => 'maera_mg_width',
 				'label'   => __( 'Width', 'maera_md' ),
 				'choices' => array(
-					'1-4' => array( 'label' => '1/4', 'classes' => 'col-xs-12 col-sm-12 col-md-3' ),
-					'1-3' => array( 'label' => '1/3', 'classes' => 'col-xs-12 col-sm-12 col-md-4' ),
-					'1-2' => array( 'label' => '1/2', 'classes' => 'col-xs-12 col-sm-12 col-md-6' ),
-					'2-3' => array( 'label' => '2/3', 'classes' => 'col-xs-12 col-sm-12 col-md-8' ),
-					'3-4' => array( 'label' => '3/4', 'classes' => 'col-xs-12 col-sm-12 col-md-9' ),
-					'1'   => array( 'label' => '4/4', 'classes' => 'col-xs-12' ),
+					'1-12' => array( 'label' => '1/12', 'classes' => 'col-md-1' ),
+					'2-12' => array( 'label' => '2/12', 'classes' => 'col-md-2' ),
+					'3-12' => array( 'label' => '3/12', 'classes' => 'col-md-3' ),
+					'4-12' => array( 'label' => '4/12', 'classes' => 'col-md-4' ),
+					'5-12' => array( 'label' => '5/12', 'classes' => 'col-md-5' ),
+					'6-12' => array( 'label' => '6/12', 'classes' => 'col-md-6' ),
+					'7-12' => array( 'label' => '7/12', 'classes' => 'col-md-7' ),
+					'8-12' => array( 'label' => '8/12', 'classes' => 'col-md-8' ),
+					'9-12' => array( 'label' => '9/12', 'classes' => 'col-md-9' ),
+					'10-12' => array( 'label' => '10/12', 'classes' => 'col-md-10' ),
+					'11-12' => array( 'label' => '12/12', 'classes' => 'col-md-11' ),
+					'12-12' => array( 'label' => '12/12', 'classes' => 'col-md-12' ),
 				),
-				'default' => '1',
+				'default' => '12-12',
 			)
 		);
 

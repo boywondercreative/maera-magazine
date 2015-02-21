@@ -13672,53 +13672,55 @@ footer p {
   text-decoration: none;
   color: #444;
 }
-.nav.simple.horizontal.two-levels {
-  background: #333;
-  position: relative;
-  height: 72px;
-}
-.nav.simple.horizontal.two-levels ul.links {
-  padding: 0;
-  margin-left: 0;
-  list-style: none;
-  list-style-type: none;
-  margin-top: 10px;
-  height: 10px;
-}
-.nav.simple.horizontal.two-levels ul.links li {
-  display: inline-block;
-}
-.nav.simple.horizontal.two-levels ul.links li a {
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #fff;
-  background: #333;
-}
-.nav.simple.horizontal.two-levels ul.links li ul {
-  display: none;
-}
-.nav.simple.horizontal.two-levels ul.links li.active a,
-.nav.simple.horizontal.two-levels ul.links li:hover a {
-  background: #c00;
-}
-.nav.simple.horizontal.two-levels ul.links li.active ul.second-level,
-.nav.simple.horizontal.two-levels ul.links li:hover ul.second-level {
-  position: absolute;
-  left: 0;
+.main-menu {
   z-index: 999;
-  display: block;
-  padding: 10px 0;
-  height: 16px;
-  margin-left: 0;
-  list-style: none;
-  list-style-type: none;
-  margin-top: 10px;
-  background: #c00;
   width: 100%;
+  max-width: 300px;
+  float: left;
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-perspective-origin: 50% 200%;
+  perspective-origin: 50% 200%;
 }
-.nav.simple.horizontal.two-levels ul.links li.active ul.second-level li,
-.nav.simple.horizontal.two-levels ul.links li:hover ul.second-level li {
+.main-menu .trigger {
+  color: #000000;
+}
+.main-menu .trigger .menu-icon {
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+}
+.main-menu ul.dl-menu {
+  display: none;
+  background: #000000;
+  padding: 0;
+  list-style: none;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.main-menu ul.dl-menu li {
+  position: relative;
+}
+.main-menu ul.dl-menu li a {
+  display: block;
+  position: relative;
+  padding: 15px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #fff;
+  outline: none;
+}
+.main-menu ul.dl-menu li a:hover {
+  background: rgba(255, 248, 213, 0.1);
+}
+.main-menu ul.dl-menu.dl-menuopen {
   display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  min-width: 300px;
 }
 .widget.widget_maera_mg_featured .panel {
   border-bottom: 5px solid #333;
@@ -15008,82 +15010,86 @@ button .badge {
   color: #00bcd4;
   background-color: white;
 }
+.main-content-table .main,
+.main-content-table #sidebar-primary {
+  float: left;
+}
 @media (min-width: 1200px) {
+  body.sidebar-250 .main-content-table .main {
+    width: 890px;
+  }
+  body.sidebar-250 .main-content-table #sidebar-primary {
+    width: 280px;
+  }
   body.sidebar-300 .main-content-table .main {
-    width: 500px;
+    width: 840px;
   }
   body.sidebar-300 .main-content-table #sidebar-primary {
-    width: 250px;
-  }
-  body.sidebar-300 .main-content-table .main {
-    width: 870px;
-  }
-  body.sidebar-300 .main-content-table #sidebar-primary {
-    width: 300px;
+    width: 330px;
   }
   body.sidebar-320 .main-content-table .main {
-    width: 850px;
+    width: 820px;
   }
   body.sidebar-320 .main-content-table #sidebar-primary {
-    width: 320px;
+    width: 350px;
   }
   body.sidebar-336 .main-content-table .main {
-    width: 834px;
+    width: 804px;
   }
   body.sidebar-336 .main-content-table #sidebar-primary {
-    width: 336px;
+    width: 366px;
   }
 }
 @media (max-width: 1200px) {
+  body.sidebar-250 .main-content-table .main {
+    width: 690px;
+  }
+  body.sidebar-250 .main-content-table #sidebar-primary {
+    width: 280px;
+  }
   body.sidebar-300 .main-content-table .main {
-    width: 500px;
+    width: 640px;
   }
   body.sidebar-300 .main-content-table #sidebar-primary {
-    width: 250px;
-  }
-  body.sidebar-300 .main-content-table .main {
-    width: 670px;
-  }
-  body.sidebar-300 .main-content-table #sidebar-primary {
-    width: 300px;
+    width: 330px;
   }
   body.sidebar-320 .main-content-table .main {
-    width: 650px;
+    width: 620px;
   }
   body.sidebar-320 .main-content-table #sidebar-primary {
-    width: 320px;
+    width: 350px;
   }
   body.sidebar-336 .main-content-table .main {
-    width: 634px;
+    width: 604px;
   }
   body.sidebar-336 .main-content-table #sidebar-primary {
-    width: 336px;
+    width: 366px;
   }
 }
 @media (max-width: 992px) {
+  body.sidebar-250 .main-content-table .main {
+    width: 470px;
+  }
+  body.sidebar-250 .main-content-table #sidebar-primary {
+    width: 280px;
+  }
   body.sidebar-300 .main-content-table .main {
-    width: 500px;
+    width: 420px;
   }
   body.sidebar-300 .main-content-table #sidebar-primary {
-    width: 250px;
-  }
-  body.sidebar-300 .main-content-table .main {
-    width: 450px;
-  }
-  body.sidebar-300 .main-content-table #sidebar-primary {
-    width: 300px;
+    width: 330px;
   }
   body.sidebar-320 .main-content-table .main {
-    width: 430px;
+    width: 400px;
   }
   body.sidebar-320 .main-content-table #sidebar-primary {
-    width: 320px;
+    width: 350px;
   }
   body.sidebar-336 .main-content-table .main {
-    width: 414px;
+    width: 384px;
   }
   body.sidebar-336 .main-content-table #sidebar-primary {
-    width: 336px;
+    width: 366px;
   }
 }
 @media (max-width: 1px) {

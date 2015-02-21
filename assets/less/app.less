@@ -63,37 +63,44 @@ button {
 	.btn-primary;
 }
 
+.main-content-table {
+	.main,
+	#sidebar-primary {
+		float: left;
+	}
+}
+
 @media (min-width: @screen-lg-min) {
-	body.sidebar-300 .main-content-table .main { width: (@container-sm - 250px); }
-	body.sidebar-300 .main-content-table #sidebar-primary { width: 250px; }
-	body.sidebar-300 .main-content-table .main { width: (@container-lg - 300px); }
-	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px; }
-	body.sidebar-320 .main-content-table .main { width: (@container-lg - 320px); }
-	body.sidebar-320 .main-content-table #sidebar-primary { width: 320px; }
-	body.sidebar-336 .main-content-table .main { width: (@container-lg - 336px); }
-	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px; }
+	body.sidebar-250 .main-content-table .main { width: (@container-lg - 250px - @grid-gutter-width); }
+	body.sidebar-250 .main-content-table #sidebar-primary { width: 250px + @grid-gutter-width; }
+	body.sidebar-300 .main-content-table .main { width: (@container-lg - 300px - @grid-gutter-width); }
+	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px + @grid-gutter-width; }
+	body.sidebar-320 .main-content-table .main { width: (@container-lg - 320px - @grid-gutter-width); }
+	body.sidebar-320 .main-content-table #sidebar-primary { width: 320px + @grid-gutter-width; }
+	body.sidebar-336 .main-content-table .main { width: (@container-lg - 336px - @grid-gutter-width); }
+	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px + @grid-gutter-width; }
 }
 
 @media (max-width: @screen-lg-min) {
-	body.sidebar-300 .main-content-table .main { width: (@container-sm - 250px); }
-	body.sidebar-300 .main-content-table #sidebar-primary { width: 250px; }
-	body.sidebar-300 .main-content-table .main { width: (@container-md - 300px); }
-	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px; }
-	body.sidebar-320 .main-content-table .main { width: (@container-md - 320px); }
-	body.sidebar-320 .main-content-table #sidebar-primary { width: 320px; }
-	body.sidebar-336 .main-content-table .main { width: (@container-md - 336px); }
-	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px; }
+	body.sidebar-250 .main-content-table .main { width: (@container-md - 250px - @grid-gutter-width); }
+	body.sidebar-250 .main-content-table #sidebar-primary { width: 250px + @grid-gutter-width; }
+	body.sidebar-300 .main-content-table .main { width: (@container-md - 300px - @grid-gutter-width); }
+	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px + @grid-gutter-width; }
+	body.sidebar-320 .main-content-table .main { width: (@container-md - 320px - @grid-gutter-width); }
+	body.sidebar-320 .main-content-table #sidebar-primary { width: 320px + @grid-gutter-width; }
+	body.sidebar-336 .main-content-table .main { width: (@container-md - 336px - @grid-gutter-width); }
+	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px + @grid-gutter-width; }
 }
 
 @media (max-width: @screen-md-min) {
-	body.sidebar-300 .main-content-table .main { width: (@container-sm - 250px); }
-	body.sidebar-300 .main-content-table #sidebar-primary { width: 250px; }
-	body.sidebar-300 .main-content-table .main { width: (@container-sm - 300px); }
-	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px; }
-	body.sidebar-320 .main-content-table .main { width: (@container-sm - 320px); }
-	body.sidebar-320 .main-content-table #sidebar-primary { width: 320px; }
-	body.sidebar-336 .main-content-table .main { width: (@container-sm - 336px); }
-	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px; }
+	body.sidebar-250 .main-content-table .main { width: (@container-sm - 250px - @grid-gutter-width); }
+	body.sidebar-250 .main-content-table #sidebar-primary { width: 250px + @grid-gutter-width; }
+	body.sidebar-300 .main-content-table .main { width: (@container-sm - 300px - @grid-gutter-width); }
+	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px + @grid-gutter-width; }
+	body.sidebar-320 .main-content-table .main { width: (@container-sm - 320px - @grid-gutter-width); }
+	body.sidebar-320 .main-content-table #sidebar-primary { width: 320px + @grid-gutter-width; }
+	body.sidebar-336 .main-content-table .main { width: (@container-sm - 336px - @grid-gutter-width); }
+	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px + @grid-gutter-width; }
 }
 
 @media (max-width: @screen-sm-min) {

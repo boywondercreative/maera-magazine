@@ -4,6 +4,8 @@
 @import 'parts/menus.less';
 @import 'parts/widget-colors.less';
 
+@screen-xs-min: 1px;
+@screen-sm-min: 1px;
 
 body {
 	.content-primary-wrapper.main {
@@ -14,6 +16,9 @@ body {
 	}
 }
 
+.main-content-table .main {
+	float: left;
+}
 img {
 	max-width: 100%;
 }
@@ -58,31 +63,9 @@ button {
 	.btn-primary;
 }
 
-@media (max-width: @screen-sm-min) {
-	body.sidebar-300 .main-content-table .main { width: 100% }
-	body.sidebar-300 .main-content-table #sidebar-primary { width: 100% }
-	body.sidebar-320 .main-content-table .main { width: 100% }
-	body.sidebar-320 .main-content-table #sidebar-primary { width: 100% }
-	body.sidebar-336 .main-content-table .main { width: 100% }
-	body.sidebar-336 .main-content-table #sidebar-primary {  }
-}
-@media (max-width: @screen-md-min) {
-	body.sidebar-300 .main-content-table .main { width: (@container-sm - 300px); }
-	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px; }
-	body.sidebar-320 .main-content-table .main { width: (@container-sm - 320px); }
-	body.sidebar-320 .main-content-table #sidebar-primary { width: 320px; }
-	body.sidebar-336 .main-content-table .main { width: (@container-sm - 336px); }
-	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px; }
-}
-@media (max-width: @screen-lg-min) {
-	body.sidebar-300 .main-content-table .main { width: (@container-md - 300px); }
-	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px; }
-	body.sidebar-320 .main-content-table .main { width: (@container-md - 320px); }
-	body.sidebar-320 .main-content-table #sidebar-primary { width: 320px; }
-	body.sidebar-336 .main-content-table .main { width: (@container-md - 336px); }
-	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px; }
-}
 @media (min-width: @screen-lg-min) {
+	body.sidebar-300 .main-content-table .main { width: (@container-sm - 250px); }
+	body.sidebar-300 .main-content-table #sidebar-primary { width: 250px; }
 	body.sidebar-300 .main-content-table .main { width: (@container-lg - 300px); }
 	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px; }
 	body.sidebar-320 .main-content-table .main { width: (@container-lg - 320px); }
@@ -91,8 +74,49 @@ button {
 	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px; }
 }
 
+@media (max-width: @screen-lg-min) {
+	body.sidebar-300 .main-content-table .main { width: (@container-sm - 250px); }
+	body.sidebar-300 .main-content-table #sidebar-primary { width: 250px; }
+	body.sidebar-300 .main-content-table .main { width: (@container-md - 300px); }
+	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px; }
+	body.sidebar-320 .main-content-table .main { width: (@container-md - 320px); }
+	body.sidebar-320 .main-content-table #sidebar-primary { width: 320px; }
+	body.sidebar-336 .main-content-table .main { width: (@container-md - 336px); }
+	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px; }
+}
+
+@media (max-width: @screen-md-min) {
+	body.sidebar-300 .main-content-table .main { width: (@container-sm - 250px); }
+	body.sidebar-300 .main-content-table #sidebar-primary { width: 250px; }
+	body.sidebar-300 .main-content-table .main { width: (@container-sm - 300px); }
+	body.sidebar-300 .main-content-table #sidebar-primary { width: 300px; }
+	body.sidebar-320 .main-content-table .main { width: (@container-sm - 320px); }
+	body.sidebar-320 .main-content-table #sidebar-primary { width: 320px; }
+	body.sidebar-336 .main-content-table .main { width: (@container-sm - 336px); }
+	body.sidebar-336 .main-content-table #sidebar-primary { width: 336px; }
+}
+
+@media (max-width: @screen-sm-min) {
+	body.sidebar-300 .main-content-table .main { width: 100% }
+	body.sidebar-300 .main-content-table #sidebar-primary { width: 100% }
+	body.sidebar-320 .main-content-table .main { width: 100% }
+	body.sidebar-320 .main-content-table #sidebar-primary { width: 100% }
+	body.sidebar-336 .main-content-table .main { width: 100% }
+	body.sidebar-336 .main-content-table #sidebar-primary {  }
+}
+
 .author-box {
 	.avatar {
 		width: 106px;
 	}
+}
+
+@media (max-width: @screen-md-min) {
+	.featured-posts-1-4.horizontal .panel-body .inside, .featured-posts-1-2.vertical .panel-body .inside {
+		display: block;
+	}
+}
+
+.maera_latest_posts_article {
+	clear:both;
 }

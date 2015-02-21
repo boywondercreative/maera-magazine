@@ -1,7 +1,7 @@
 {% extends "main.twig" %}
 {% block content %}
 
-{% set parts_serialized = theme.theme_mod('single_post_parts', '') %}
+{% set parts_serialized = theme.theme_mod('single_post_parts', function('serialize', ['title','meta','content','comments'] ) ) %}
 {% set parts = function('unserialize', parts_serialized) %}
 
 <div class="content-wrapper col-md-12">

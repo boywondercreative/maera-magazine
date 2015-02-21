@@ -51,6 +51,7 @@ class Maera_MG_Widget_Classes {
 					'e0e0e0' => array( 'label' => 'almost-grey',   'classes' => 'almost-grey' ),
 					'9e9e9e' => array( 'label' => 'concrete-grey', 'classes' => 'concrete-grey' ),
 					'757575' => array( 'label' => 'asbestos-grey', 'classes' => 'asbestos-grey' ),
+					'000000' => array( 'label' => 'black',         'classes' => 'black' ),
 				),
 				'default' => '',
 			)

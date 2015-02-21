@@ -6,7 +6,7 @@
 		<div class="row inside">
 			{% for post in posts %}
 				{% if count == 0 %}
-					<div class="col-md-6 left">
+					<div class="col-lg-6 left">
 						<a href="{{ post.link }}"><img src="{{ post.get_thumbnail.get_src|resize(580, 309) }}"></a>
 						<h3 class="post-title"><a href="{{ post.link }}">{{ post.title }}</a></h3>
 						<div class="post-meta">
@@ -19,7 +19,7 @@
 							<a href="{{ post.link }}" class="btn btn-primary btn-sm">{{ widget.more_text }}</a>
 						</div>
 					</div>
-					<div class="col-md-6 right list-group">
+					<div class="col-lg-6 right list-group">
 				{% else %}
 					<div class="media">
 						<div class="media-left">

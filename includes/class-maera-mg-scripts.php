@@ -17,6 +17,8 @@ class Maera_MG_Scripts {
 		wp_register_script( 'bootstrap-accessibility', MAERA_MAGAZINE_SHELL_URL . '/assets/js/bootstrap-accessibility.min.js', false, null, true  );
 		wp_enqueue_script( 'bootstrap-accessibility' );
 
+		wp_enqueue_script( 'jquery-dlmenut', MAERA_MAGAZINE_SHELL_URL . '/assets/js/menu.js', array( 'jquery' ) );
+
 		wp_register_style( 'bootstrap-accessibility', MAERA_MAGAZINE_SHELL_URL . '/assets/css/bootstrap-accessibility.css', false, null, true );
 		wp_enqueue_style( 'bootstrap-accessibility' );
 

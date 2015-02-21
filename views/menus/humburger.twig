@@ -1,11 +1,11 @@
-<div id="main-menu" class="main-menu">
+<div class="humburger-menu">
 	<a class="trigger" alt="{{ __('Open Menu', 'maera_mg') }}"><span class="menu-icon dashicons dashicons-menu"></span></a>
-	<ul class="dl-menu">
+	<ul class="menu">
 		{% for item in menu.get_items %}
 			<li class="{{ item.classes|join(' ') }}{% if 'current-menu-item' in item.classes %} active{% endif %}">
 				<a href="{{ item.get_path }}">{{ item.title }}</a>
 				{% if item.get_children %}
-					<ul class="dl-submenu">
+					<ul class="submenu">
 						{% for child in item.get_children %}
 							<li class="{{ item.classes|join(' ') }}{% if 'current-menu-item' in item.classes %} active{% endif %}">
 								<a href="{{ item.get_path }}">{{ item.title }}</a>

@@ -1,4 +1,4 @@
-.main-menu {
+.humburger-menu {
 	z-index: 999;
 	width: 100%;
 	max-width: 300px;
@@ -16,11 +16,12 @@
 			height: 50px;
 		}
 	}
-	ul.dl-menu {
+	ul.menu {
 		display:none;
 		background: @black;
 		padding: 0;
 		list-style: none;
+		list-style-type: none;
 		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
 		li {
@@ -35,11 +36,26 @@
 				color: #fff;
 				outline: none;
 				&:hover {
-					background: rgba(255,248,213,0.1);
+					background: rgba(255,255,255,0.1);
+				}
+			}
+			&.menu-item-has-children {
+				ul.submenu {
+					display: none;
+				}
+				&:hover {
+					ul.submenu {
+						display: block;
+						background: rgba(255,255,255,0.1);
+						margin: 0;
+						padding: 0;
+						list-style: none;
+						list-style-type: none;
+					}
 				}
 			}
 		}
-		&.dl-menuopen {
+		&.menuopen {
 			display: inline-block;
 			position: absolute;
 			top: 50px;

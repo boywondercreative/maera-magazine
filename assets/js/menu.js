@@ -1,7 +1,7 @@
 (function($) {
 	$(function() {
-		$( ".main-menu .trigger" ).click( function() {
-			$( ".dl-menu" ).toggleClass( "dl-menuopen" );
+		$( ".humburger-menu .trigger" ).click( function() {
+			$( ".menu" ).toggleClass( "menuopen" );
 		});
 	});
 })(jQuery);

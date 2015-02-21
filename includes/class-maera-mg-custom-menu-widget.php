@@ -23,7 +23,7 @@ class Maera_MG_Custom_Menu_Widget extends WP_Widget {
 
 		/** This filter is documented in wp-includes/default-widgets.php */
 		$instance['title'] = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
-		$instance['template'] = ( isset( $instance['template'] ) || ! empty( $instance['template'] ) ) ? $instance['template'] : 'bs-nav';
+		$instance['template'] = ( isset( $instance['template'] ) || ! empty( $instance['template'] ) ) ? $instance['template'] : 'navbar';
 
 		echo $args['before_widget'];
 

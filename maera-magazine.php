@@ -56,6 +56,8 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
                 define( 'MAERA_SHELL_PATH', dirname( __FILE__ ) );
             }
 
+            // add_action( 'after_setup_theme', array( $this, 'theme_supports' ) );
+
             // Require any additional files
             require_once( __DIR__ . '/includes/class-maera-mg-customizer.php');
             require_once( __DIR__ . '/includes/class-maera-mg-enqueue.php');
@@ -88,6 +90,14 @@ if ( ! class_exists( 'Maera_Magazine' ) ) {
 
             return self::$instance;
 
+        }
+
+        public function theme_supports() {
+            add_theme_support( 'infinite-scroll', array(
+                'type'      => 'scroll',
+                'container' => 'content',
+                'footer'    => false,
+            ) );
         }
 
     }
